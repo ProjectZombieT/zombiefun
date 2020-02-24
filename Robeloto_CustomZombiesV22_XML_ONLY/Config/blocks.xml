@@ -1,4 +1,4 @@
-<configs>
+<configs> <!-- test -->
 <append xpath="/blocks">
 
 <block name="chestroomdoorv1">
