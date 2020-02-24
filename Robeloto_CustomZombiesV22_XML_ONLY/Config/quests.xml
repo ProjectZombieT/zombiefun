@@ -1,0 +1,1821 @@
+<configs>
+
+
+<!-- 
+=== 
+HEY Nick: Few things needed:
+- spawn enemy needs to be +2 more to kill than the objective. It will still work without the requirement needed. So users won't run into "there wasn't enough zombies" issue
+- make the screamers spawn to 4-5
+- spawn 1 bolter maybe? 
+===
+-->
+
+
+
+
+	<append xpath="/quests">
+	<!--ZombieBossGiant-->
+		
+		<quest id="test">
+			<property name="name" value="Kill the Giant Special Infected Boss"/>
+			<property name="subtitle" value="Kill giant"/>
+			<property name="description" value="Get rid of the Problem"/>
+			<property name="icon" value="ui_game_symbol_zombie"/>
+			<property name="repeatable" value="true"/>
+			<property name="category_key" value="challenge"/>
+			<property name="offer" value="Dart Feld, The true leader behind the clan, known as the 'F1' of 'The 5' has requested you to take care of a special infected that has been spotted in the area. This special infected has been causing major problems with smaller communities. Dart does not tolerate civillian deaths and is willing to pay you well for your work."/>
+			<property name="difficulty" value="insane"/>
+			<property name="completiontype" value="TurnIn"/>
+			<property name="shareable" value="true"/>
+			
+			<objective type="RandomGoto" value="150" phase="1">
+				<property name="completion_distance" value="100"/>
+			</objective>
+
+			<objective type="RallyPoint">
+				<property name="start_mode" value="Create"/>
+				<property name="phase" value="2"/>
+			</objective>
+			
+			
+			
+			<action type="SpawnEnemy" id="zombieScreamer" value="3" phase="3"/>
+
+			<action type="SpawnEnemy" id="SuperZombieGiantV1" value="1" phase="3"/>
+			<objective type="ZombieKill" id="SuperZombieGiantV1" value="1" phase="3"/>
+			
+			<action type="SpawnEnemy" id="zombieGiant" value="10" phase="3" />
+			<objective type="ZombieKill" id="zombieGiant" value="12" phase="3" />
+			
+			
+
+			<objective type="InteractWithNPC">
+				<property name="phase" value="4"/>
+			</objective>
+
+			<reward type="Exp" value="500"/>
+			<!-- You can define a range of rewards like <reward type="Item" id="casinoCoin" value="200-500"/> -->
+			<reward type="LootItem" id="zmklegendaryT3" ischosen="true" value="1"/> 
+ 	 			<reward type="LootItem" id="zmkresources" ischosen="true" value="1"/>
+		</quest>		
+		
+		<quest id="challenge_FightTheGiantLv1">
+			<property name="name" value="Kill the Giant Special Infected Boss"/>
+			<property name="subtitle" value="Kill giant"/>
+			<property name="description" value="Get rid of the Problem"/>
+			<property name="icon" value="ui_game_symbol_zombie"/>
+			<property name="repeatable" value="true"/>
+			<property name="category_key" value="challenge"/>
+			<property name="offer" value="Dart Feld, The true leader behind the clan, known as the 'F1' of 'The 5' has requested you to take care of a special infected that has been spotted in the area. This special infected has been causing major problems with smaller communities. Dart does not tolerate civillian deaths and is willing to pay you well for your work."/>
+			<property name="difficulty" value="insane"/>
+			<property name="completiontype" value="TurnIn"/>
+			<property name="shareable" value="true"/>
+			
+			<objective type="RandomGoto" value="150" phase="1">
+				<property name="completion_distance" value="100"/>
+			</objective>
+
+			<objective type="RallyPoint">
+				<property name="start_mode" value="Create"/>
+				<property name="phase" value="2"/>
+			</objective>
+			
+			<action type="SpawnEnemy" id="zombieScreamer" value="3" phase="3"/>
+			
+			<action type="SpawnEnemy" id="SuperZombieGiantV1" value="1" phase="3"/>
+			<objective type="ZombieKill" id="SuperZombieGiantV1" value="1" phase="3"/>
+			
+			<action type="SpawnEnemy" id="zombieGiant" value="12" phase="3" />
+
+			<objective type="InteractWithNPC">
+				<property name="phase" value="4"/>
+			</objective>
+
+			<reward type="Exp" value="500"/>
+			<!-- You can define a range of rewards like <reward type="Item" id="casinoCoin" value="200-500"/> -->
+			<reward type="LootItem" id="zmklegendaryT1" ischosen="true" value="1"/> 
+ 	 			<reward type="LootItem" id="zmkresources" ischosen="true" value="1"/>
+		</quest>
+		
+		
+	
+	
+	
+		
+		<quest id="challenge_FightTheGiantLv2">
+			<property name="name" value="Kill the Giant Special Infected Boss"/>
+			<property name="subtitle" value="Kill giant"/>
+			<property name="description" value="Get rid of the Problem"/>
+			<property name="icon" value="ui_game_symbol_zombie"/>
+			<property name="repeatable" value="true"/>
+			<property name="category_key" value="challenge"/>
+			<property name="offer" value="Dart Feld, The true leader behind the clan, known as the 'F1' of 'The 5' has requested you to take care of a special infected that has been spotted in the area. This special infected has been causing major problems with smaller communities. Dart does not tolerate civillian deaths and is willing to pay you well for your work."/>
+			<property name="difficulty" value="insane"/>
+			<property name="completiontype" value="TurnIn"/>
+			<property name="shareable" value="true"/>
+
+			<objective type="RandomGoto" value="150" phase="1">
+				<property name="completion_distance" value="100"/>
+			</objective>
+
+			<objective type="RallyPoint">
+				<property name="start_mode" value="Create"/>
+				<property name="phase" value="2"/>
+			</objective>
+
+			<action type="SpawnEnemy" id="zombieScreamer" value="3" phase="3"/>
+			
+			<action type="SpawnEnemy" id="SuperZombieGiantV2" value="1" phase="3"/>
+			<objective type="ZombieKill" id="SuperZombieGiantV2" value="1" phase="3"/>
+			
+			<action type="SpawnEnemy" id="zombieGiant" value="20" phase="3" />
+
+			<objective type="InteractWithNPC">
+				<property name="phase" value="4"/>
+			</objective>
+
+			<reward type="Exp" value="500"/>
+			<!-- You can define a range of rewards like <reward type="Item" id="casinoCoin" value="200-500"/> -->
+			<reward type="LootItem" id="zmklegendaryT2" ischosen="true" value="1"/> 
+ 	 			<reward type="LootItem" id="zmkresources" ischosen="true" value="1"/>
+		</quest>
+		
+		
+		<quest id="challenge_FightTheGiantLv3">
+			<property name="name" value="Kill the Giant Special Infected Boss"/>
+			<property name="subtitle" value="Kill giant"/>
+			<property name="description" value="Get rid of the Problem"/>
+			<property name="icon" value="ui_game_symbol_zombie"/>
+			<property name="repeatable" value="true"/>
+			<property name="category_key" value="challenge"/>
+			<property name="offer" value="Dart Feld, The true leader behind the clan, known as the 'F1' of 'The 5' has requested you to take care of a special infected that has been spotted in the area. This special infected has been causing major problems with smaller communities. Dart does not tolerate civillian deaths and is willing to pay you well for your work."/>
+			<property name="difficulty" value="insane"/>
+			<property name="completiontype" value="TurnIn"/>
+			<property name="shareable" value="true"/>
+
+			<objective type="RandomGoto" value="150" phase="1">
+				<property name="completion_distance" value="100"/>
+			</objective>
+
+			<objective type="RallyPoint">
+				<property name="start_mode" value="Create"/>
+				<property name="phase" value="2"/>
+			</objective>
+
+			<action type="SpawnEnemy" id="zombieScreamer" value="3" phase="3"/>
+			
+			<action type="SpawnEnemy" id="SuperZombieGiantV3" value="1" phase="3"/>
+			<objective type="ZombieKill" id="SuperZombieGiantV3" value="1" phase="3"/>
+			
+			<action type="SpawnEnemy" id="zombieGiant" value="30" phase="3" />
+
+			<objective type="InteractWithNPC">
+				<property name="phase" value="4"/>
+			</objective>
+
+			<reward type="Exp" value="500"/>
+			<!-- You can define a range of rewards like <reward type="Item" id="casinoCoin" value="200-500"/> -->
+			<reward type="LootItem" id="zmklegendaryT3" ischosen="true" value="1"/> 
+ 	 			<reward type="LootItem" id="zmkresources" ischosen="true" value="1"/>
+		</quest>
+		
+		
+	<!--End of zombie boss giant -->
+	
+	<!--zombieShadowBoss-->
+	
+		<quest id="challenge_FightTheShadows LV1">
+			<property name="name" value="Kill Shadow bosses"/>
+			<property name="subtitle" value="Kill ShadowZombie"/>
+			<property name="description" value="Get rid of the Problem"/>
+			<property name="icon" value="ui_game_symbol_zombie"/>
+			<property name="repeatable" value="true"/>
+			<property name="category_key" value="challenge"/>
+			<property name="offer" value="Dart Feld, The true leader behind the clan, known as the 'F1' of 'The 5' has requested you to take care of a special infected that has been spotted in the area. This special infected has been causing major problems with smaller communities. Dart does not tolerate civillian deaths and is willing to pay you well for your work."/>
+			<property name="difficulty" value="insane"/>
+			<property name="completiontype" value="TurnIn"/>
+			<property name="shareable" value="true"/>
+			
+			<objective type="RandomGoto" value="150" phase="1">
+				<property name="completion_distance" value="100"/>
+			</objective>
+
+			<objective type="RallyPoint">
+				<property name="start_mode" value="Create"/>
+				<property name="phase" value="2"/>
+			</objective>
+			
+			<action type="SpawnEnemy" id="zombieScreamer" value="3" phase="3"/>
+			
+			<action type="SpawnEnemy" id="ZombieShadowBossV1" value="1" phase="3"/>
+			<objective type="ZombieKill" id="ZombieShadowBossV1" value="1" phase="3"/>
+			
+			<action type="SpawnEnemy" id="zombieShadow" value="10" phase="3" />
+
+			<objective type="InteractWithNPC">
+				<property name="phase" value="4"/>
+			</objective>
+
+			<reward type="Exp" value="500"/>
+			<!-- You can define a range of rewards like <reward type="Item" id="casinoCoin" value="200-500"/> -->
+			<reward type="LootItem" id="zmklegendaryT1" ischosen="true" value="1"/> 
+ 	 			<reward type="LootItem" id="zmkresources" ischosen="true" value="1"/>
+		</quest>
+		
+		<quest id="challenge_FightTheShadows LV2">
+			<property name="name" value="Kill Shadow bosses"/>
+			<property name="subtitle" value="Kill ShadowZombie"/>
+			<property name="description" value="Get rid of the Problem"/>
+			<property name="icon" value="ui_game_symbol_zombie"/>
+			<property name="repeatable" value="true"/>
+			<property name="category_key" value="challenge"/>
+			<property name="offer" value="Dart Feld, The true leader behind the clan, known as the 'F1' of 'The 5' has requested you to take care of a special infected that has been spotted in the area. This special infected has been causing major problems with smaller communities. Dart does not tolerate civillian deaths and is willing to pay you well for your work."/>
+			<property name="difficulty" value="insane"/>
+			<property name="completiontype" value="TurnIn"/>
+			<property name="shareable" value="true"/>
+			
+			<objective type="RandomGoto" value="150" phase="1">
+				<property name="completion_distance" value="100"/>
+			</objective>
+
+			<objective type="RallyPoint">
+				<property name="start_mode" value="Create"/>
+				<property name="phase" value="2"/>
+			</objective>
+			
+			<action type="SpawnEnemy" id="zombieScreamer" value="3" phase="3"/>
+			
+			<action type="SpawnEnemy" id="ZombieShadowBossV2" value="1" phase="3"/>
+			<objective type="ZombieKill" id="ZombieShadowBossV2" value="1" phase="3"/>
+			
+			<action type="SpawnEnemy" id="zombieShadow" value="20" phase="3" />
+
+			<objective type="InteractWithNPC">
+				<property name="phase" value="4"/>
+			</objective>
+
+			<reward type="Exp" value="500"/>
+			<!-- You can define a range of rewards like <reward type="Item" id="casinoCoin" value="200-500"/> -->
+			<reward type="LootItem" id="zmklegendaryT2" ischosen="true" value="1"/> 
+ 	 			<reward type="LootItem" id="zmkresources" ischosen="true" value="1"/>
+		</quest>
+		
+		<quest id="challenge_FightTheShadows LV3">
+			<property name="name" value="Kill Shadow bosses"/>
+			<property name="subtitle" value="Kill ShadowZombie"/>
+			<property name="description" value="Get rid of the Problem"/>
+			<property name="icon" value="ui_game_symbol_zombie"/>
+			<property name="repeatable" value="true"/>
+			<property name="category_key" value="challenge"/>
+			<property name="offer" value="Dart Feld, The true leader behind the clan, known as the 'F1' of 'The 5' has requested you to take care of a special infected that has been spotted in the area. This special infected has been causing major problems with smaller communities. Dart does not tolerate civillian deaths and is willing to pay you well for your work."/>
+			<property name="difficulty" value="insane"/>
+			<property name="completiontype" value="TurnIn"/>
+			<property name="shareable" value="true"/>
+			
+			<objective type="RandomGoto" value="150" phase="1">
+				<property name="completion_distance" value="100"/>
+			</objective>
+
+			<objective type="RallyPoint">
+				<property name="start_mode" value="Create"/>
+				<property name="phase" value="2"/>
+			</objective>
+			
+			<action type="SpawnEnemy" id="zombieScreamer" value="3" phase="3"/>
+			
+			<action type="SpawnEnemy" id="ZombieShadowBossV3" value="1" phase="3"/>
+			<objective type="ZombieKill" id="ZombieShadowBossV3" value="1" phase="3"/>
+			
+			<action type="SpawnEnemy" id="zombieShadow" value="30" phase="3" />
+
+			<objective type="InteractWithNPC">
+				<property name="phase" value="4"/>
+			</objective>
+
+			<reward type="Exp" value="500"/>
+			<!-- You can define a range of rewards like <reward type="Item" id="casinoCoin" value="200-500"/> -->
+			<reward type="LootItem" id="zmklegendaryT3" ischosen="true" value="1"/> 
+ 	 			<reward type="LootItem" id="zmkresources" ischosen="true" value="1"/>
+		</quest>
+		
+<!--ZombieShadowBossEnd-->
+
+<!--ZombieSanguisBoss Start -->
+
+<quest id="challenge_KillTheSanguis LV1">
+			<property name="name" value="Kill Sanguis"/>
+			<property name="subtitle" value="Kill Sanguis"/>
+			<property name="description" value="Get rid of the Problem"/>
+			<property name="icon" value="ui_game_symbol_zombie"/>
+			<property name="repeatable" value="true"/>
+			<property name="category_key" value="challenge"/>
+			<property name="offer" value="Dart Feld, The true leader behind the clan, known as the 'F1' of 'The 5' has requested you to take care of a special infected that has been spotted in the area. This special infected has been causing major problems with smaller communities. Dart does not tolerate civillian deaths and is willing to pay you well for your work."/>
+			<property name="difficulty" value="insane"/>
+			<property name="completiontype" value="TurnIn"/>
+			<property name="shareable" value="true"/>
+			
+			<objective type="RandomGoto" value="150" phase="1">
+				<property name="completion_distance" value="100"/>
+			</objective>
+
+			<objective type="RallyPoint">
+				<property name="start_mode" value="Create"/>
+				<property name="phase" value="2"/>
+			</objective>
+			
+			<action type="SpawnEnemy" id="zombieScreamer" value="3" phase="3"/>
+			
+			<action type="SpawnEnemy" id="ZombieSanguisBossV1" value="1" phase="3"/>
+			<objective type="ZombieKill" id="ZombieSanguisBossV1" value="1" phase="3"/>
+			
+			<action type="SpawnEnemy" id="zombieSanguis" value="10" phase="3" />
+
+			<objective type="InteractWithNPC">
+				<property name="phase" value="4"/>
+			</objective>
+
+			<reward type="Exp" value="500"/>
+			<!-- You can define a range of rewards like <reward type="Item" id="casinoCoin" value="200-500"/> -->
+			<reward type="LootItem" id="zmklegendaryT1" ischosen="true" value="1"/> 
+ 	 			<reward type="LootItem" id="zmkresources" ischosen="true" value="1"/>
+		</quest>
+
+<quest id="challenge_KillTheSanguis LV2">
+			<property name="name" value="Kill Sanguis"/>
+			<property name="subtitle" value="Kill Sanguis"/>
+			<property name="description" value="Get rid of the Problem"/>
+			<property name="icon" value="ui_game_symbol_zombie"/>
+			<property name="repeatable" value="true"/>
+			<property name="category_key" value="challenge"/>
+			<property name="offer" value="Dart Feld, The true leader behind the clan, known as the 'F1' of 'The 5' has requested you to take care of a special infected that has been spotted in the area. This special infected has been causing major problems with smaller communities. Dart does not tolerate civillian deaths and is willing to pay you well for your work."/>
+			<property name="difficulty" value="insane"/>
+			<property name="completiontype" value="TurnIn"/>
+			<property name="shareable" value="true"/>
+			
+			<objective type="RandomGoto" value="150" phase="1">
+				<property name="completion_distance" value="100"/>
+			</objective>
+
+			<objective type="RallyPoint">
+				<property name="start_mode" value="Create"/>
+				<property name="phase" value="2"/>
+			</objective>
+
+			<action type="SpawnEnemy" id="zombieScreamer" value="3" phase="3"/>
+			
+			<action type="SpawnEnemy" id="ZombieSanguisBossV2" value="1" phase="3"/>
+			<objective type="ZombieKill" id="ZombieSanguisBossV2" value="1" phase="3"/>
+			
+			<action type="SpawnEnemy" id="zombieSanguis" value="20" phase="3" />
+
+			<objective type="InteractWithNPC">
+				<property name="phase" value="4"/>
+			</objective>
+
+			<reward type="Exp" value="500"/>
+			<!-- You can define a range of rewards like <reward type="Item" id="casinoCoin" value="200-500"/> -->
+			<reward type="LootItem" id="zmklegendaryT2" ischosen="true" value="1"/> 
+ 	 			<reward type="LootItem" id="zmkresources" ischosen="true" value="1"/>
+		</quest>
+
+<quest id="challenge_KillTheSanguis LV3">
+			<property name="name" value="Kill Sanguis"/>
+			<property name="subtitle" value="Kill Sanguis"/>
+			<property name="description" value="Get rid of the Problem"/>
+			<property name="icon" value="ui_game_symbol_zombie"/>
+			<property name="repeatable" value="true"/>
+			<property name="category_key" value="challenge"/>
+			<property name="offer" value="Dart Feld, The true leader behind the clan, known as the 'F1' of 'The 5' has requested you to take care of a special infected that has been spotted in the area. This special infected has been causing major problems with smaller communities. Dart does not tolerate civillian deaths and is willing to pay you well for your work."/>
+			<property name="difficulty" value="insane"/>
+			<property name="completiontype" value="TurnIn"/>
+			<property name="shareable" value="true"/>
+			
+			<objective type="RandomGoto" value="150" phase="1">
+				<property name="completion_distance" value="100"/>
+			</objective>
+
+			<objective type="RallyPoint">
+				<property name="start_mode" value="Create"/>
+				<property name="phase" value="2"/>
+			</objective>
+
+			<action type="SpawnEnemy" id="zombieScreamer" value="3" phase="3"/>
+			
+			<action type="SpawnEnemy" id="ZombieSanguisBossV3" value="1" phase="3"/>
+			<objective type="ZombieKill" id="ZombieSanguisBossV3" value="1" phase="3"/>
+			
+			<action type="SpawnEnemy" id="zombieSanguis" value="30" phase="3" />
+
+			<objective type="InteractWithNPC">
+				<property name="phase" value="4"/>
+			</objective>
+
+			<reward type="Exp" value="500"/>
+			<!-- You can define a range of rewards like <reward type="Item" id="casinoCoin" value="200-500"/> -->
+			<reward type="LootItem" id="zmklegendaryT3" ischosen="true" value="1"/> 
+ 	 			<reward type="LootItem" id="zmkresources" ischosen="true" value="1"/>
+		</quest>
+		
+<!--ZombieSanguisBoss End -->
+
+<!--ZombieAnesthesiaBoss Start -->	
+
+<quest id="challenge_KillAnesthesia LV1">
+			<property name="name" value="Kill Anesthesia"/>
+			<property name="subtitle" value="Kill Anesthesia"/>
+			<property name="description" value="Get rid of the Problem"/>
+			<property name="icon" value="ui_game_symbol_zombie"/>
+			<property name="repeatable" value="true"/>
+			<property name="category_key" value="challenge"/>
+			<property name="offer" value="Dart Feld, The true leader behind the clan, known as the 'F1' of 'The 5' has requested you to take care of a special infected that has been spotted in the area. This special infected has been causing major problems with smaller communities. Dart does not tolerate civillian deaths and is willing to pay you well for your work."/>
+			<property name="difficulty" value="insane"/>
+			<property name="completiontype" value="TurnIn"/>
+			<property name="shareable" value="true"/>
+			
+			<objective type="RandomGoto" value="150" phase="1">
+				<property name="completion_distance" value="100"/>
+			</objective>
+
+			<objective type="RallyPoint">
+				<property name="start_mode" value="Create"/>
+				<property name="phase" value="2"/>
+			</objective>
+			
+			<action type="SpawnEnemy" id="zombieScreamer" value="3" phase="3"/>
+			
+			<action type="SpawnEnemy" id="ZombieAnesthesiaBossV1" value="1" phase="3"/>
+			<objective type="ZombieKill" id="ZombieAnesthesiaBossV1" value="1" phase="3"/>
+			
+			<action type="SpawnEnemy" id="zombieAnesthesia" value="10" phase="3" />
+
+			<objective type="InteractWithNPC">
+				<property name="phase" value="4"/>
+			</objective>
+
+			<reward type="Exp" value="500"/>
+			<!-- You can define a range of rewards like <reward type="Item" id="casinoCoin" value="200-500"/> -->
+			<reward type="LootItem" id="zmklegendaryT1" ischosen="true" value="1"/> 
+ 	 			<reward type="LootItem" id="zmkresources" ischosen="true" value="1"/>
+		</quest>
+
+<quest id="challenge_KillAnesthesia LV2">
+			<property name="name" value="Kill Anesthesia"/>
+			<property name="subtitle" value="Kill Anesthesia"/>
+			<property name="description" value="Get rid of the Problem"/>
+			<property name="icon" value="ui_game_symbol_zombie"/>
+			<property name="repeatable" value="true"/>
+			<property name="category_key" value="challenge"/>
+			<property name="offer" value="Dart Feld, The true leader behind the clan, known as the 'F1' of 'The 5' has requested you to take care of a special infected that has been spotted in the area. This special infected has been causing major problems with smaller communities. Dart does not tolerate civillian deaths and is willing to pay you well for your work."/>
+			<property name="difficulty" value="insane"/>
+			<property name="completiontype" value="TurnIn"/>
+			<property name="shareable" value="true"/>
+			
+			<objective type="RandomGoto" value="150" phase="1">
+				<property name="completion_distance" value="100"/>
+			</objective>
+
+			<objective type="RallyPoint">
+				<property name="start_mode" value="Create"/>
+				<property name="phase" value="2"/>
+			</objective>
+			
+			<action type="SpawnEnemy" id="zombieScreamer" value="3" phase="3"/>
+			
+			<action type="SpawnEnemy" id="ZombieAnesthesiaBossV2" value="1" phase="3"/>
+			<objective type="ZombieKill" id="ZombieAnesthesiaBossV2" value="1" phase="3"/>
+			
+			<action type="SpawnEnemy" id="zombieAnesthesia" value="20" phase="3" />
+
+			<objective type="InteractWithNPC">
+				<property name="phase" value="4"/>
+			</objective>
+
+			<reward type="Exp" value="500"/>
+			<!-- You can define a range of rewards like <reward type="Item" id="casinoCoin" value="200-500"/> -->
+			<reward type="LootItem" id="zmklegendaryT2" ischosen="true" value="1"/> 
+ 	 			<reward type="LootItem" id="zmkresources" ischosen="true" value="1"/>
+		</quest>
+
+<quest id="challenge_KillAnesthesia LV3">
+			<property name="name" value="Kill Anesthesia"/>
+			<property name="subtitle" value="Kill Anesthesia"/>
+			<property name="description" value="Get rid of the Problem"/>
+			<property name="icon" value="ui_game_symbol_zombie"/>
+			<property name="repeatable" value="true"/>
+			<property name="category_key" value="challenge"/>
+			<property name="offer" value="Dart Feld, The true leader behind the clan, known as the 'F1' of 'The 5' has requested you to take care of a special infected that has been spotted in the area. This special infected has been causing major problems with smaller communities. Dart does not tolerate civillian deaths and is willing to pay you well for your work."/>
+			<property name="difficulty" value="insane"/>
+			<property name="completiontype" value="TurnIn"/>
+			<property name="shareable" value="true"/>
+			
+			<objective type="RandomGoto" value="150" phase="1">
+				<property name="completion_distance" value="100"/>
+			</objective>
+
+			<objective type="RallyPoint">
+				<property name="start_mode" value="Create"/>
+				<property name="phase" value="2"/>
+			</objective>
+			
+			<action type="SpawnEnemy" id="zombieScreamer" value="3" phase="3"/>
+			
+			<action type="SpawnEnemy" id="ZombieAnesthesiaBossV3" value="1" phase="3"/>
+			<objective type="ZombieKill" id="ZombieAnesthesiaBossV3" value="1" phase="3"/>
+			
+			<action type="SpawnEnemy" id="zombieAnesthesia" value="30" phase="3" />
+
+			<objective type="InteractWithNPC">
+				<property name="phase" value="4"/>
+			</objective>
+
+			<reward type="Exp" value="500"/>
+			<!-- You can define a range of rewards like <reward type="Item" id="casinoCoin" value="200-500"/> -->
+			<reward type="LootItem" id="zmklegendaryT3" ischosen="true" value="1"/> 
+ 	 			<reward type="LootItem" id="zmkresources" ischosen="true" value="1"/>
+		</quest>
+
+<!--ZombieAnesthesiaBoss End -->			
+		
+<!--ZombieFireBoss Start -->
+
+<quest id="challenge_Extinguish_the_flames LV1">
+			<property name="name" value="Kill ZombieFireBoss"/>
+			<property name="subtitle" value="Kill ZombieFireBoss"/>
+			<property name="description" value="Get rid of the Problem"/>
+			<property name="icon" value="ui_game_symbol_zombie"/>
+			<property name="repeatable" value="true"/>
+			<property name="category_key" value="challenge"/>
+			<property name="offer" value="Dart Feld, The true leader behind the clan, known as the 'F1' of 'The 5' has requested you to take care of a special infected that has been spotted in the area. This special infected has been causing major problems with smaller communities. Dart does not tolerate civillian deaths and is willing to pay you well for your work."/>
+			<property name="difficulty" value="insane"/>
+			<property name="completiontype" value="TurnIn"/>
+			<property name="shareable" value="true"/>
+			
+			<objective type="RandomGoto" value="150" phase="1">
+				<property name="completion_distance" value="100"/>
+			</objective>
+
+			<objective type="RallyPoint">
+				<property name="start_mode" value="Create"/>
+				<property name="phase" value="2"/>
+			</objective>
+			
+			<action type="SpawnEnemy" id="zombieScreamer" value="3" phase="3"/>
+			
+			<action type="SpawnEnemy" id="ZombieFireBossV1" value="1" phase="3"/>
+			<objective type="ZombieKill" id="ZombieFireBossV1" value="1" phase="3"/>
+			
+			<action type="SpawnEnemy" id="zombieFireBoss" value="10" phase="3" />
+
+			<objective type="InteractWithNPC">
+				<property name="phase" value="4"/>
+			</objective>
+
+			<reward type="Exp" value="500"/>
+			<!-- You can define a range of rewards like <reward type="Item" id="casinoCoin" value="200-500"/> -->
+			<reward type="LootItem" id="zmklegendaryT1" ischosen="true" value="1"/> 
+ 	 			<reward type="LootItem" id="zmkresources" ischosen="true" value="1"/>
+		</quest>
+		
+<quest id="challenge_Extinguish_the_flames LV2">
+			<property name="name" value="Kill ZombieFireBoss"/>
+			<property name="subtitle" value="Kill ZombieFireBoss"/>
+			<property name="description" value="Get rid of the Problem"/>
+			<property name="icon" value="ui_game_symbol_zombie"/>
+			<property name="repeatable" value="true"/>
+			<property name="category_key" value="challenge"/>
+			<property name="offer" value="Dart Feld, The true leader behind the clan, known as the 'F1' of 'The 5' has requested you to take care of a special infected that has been spotted in the area. This special infected has been causing major problems with smaller communities. Dart does not tolerate civillian deaths and is willing to pay you well for your work."/>
+			<property name="difficulty" value="insane"/>
+			<property name="completiontype" value="TurnIn"/>
+			<property name="shareable" value="true"/>
+			
+			<objective type="RandomGoto" value="150" phase="1">
+				<property name="completion_distance" value="100"/>
+			</objective>
+
+			<objective type="RallyPoint">
+				<property name="start_mode" value="Create"/>
+				<property name="phase" value="2"/>
+			</objective>
+			
+			<action type="SpawnEnemy" id="zombieScreamer" value="3" phase="3"/>
+			
+			<action type="SpawnEnemy" id="ZombieFireBossV2" value="1" phase="3"/>
+			<objective type="ZombieKill" id="ZombieFireBossV2" value="1" phase="3"/>
+			
+			<action type="SpawnEnemy" id="zombieFireBoss" value="20" phase="3" />
+
+			<objective type="InteractWithNPC">
+				<property name="phase" value="4"/>
+			</objective>
+
+			<reward type="Exp" value="500"/>
+			<!-- You can define a range of rewards like <reward type="Item" id="casinoCoin" value="200-500"/> -->
+			<reward type="LootItem" id="zmklegendaryT2" ischosen="true" value="1"/> 
+ 	 			<reward type="LootItem" id="zmkresources" ischosen="true" value="1"/>
+		</quest>
+		
+<quest id="challenge_Extinguish_the_flames LV3">
+			<property name="name" value="Kill ZombieFireBoss"/>
+			<property name="subtitle" value="Kill ZombieFireBoss"/>
+			<property name="description" value="Get rid of the Problem"/>
+			<property name="icon" value="ui_game_symbol_zombie"/>
+			<property name="repeatable" value="true"/>
+			<property name="category_key" value="challenge"/>
+			<property name="offer" value="Dart Feld, The true leader behind the clan, known as the 'F1' of 'The 5' has requested you to take care of a special infected that has been spotted in the area. This special infected has been causing major problems with smaller communities. Dart does not tolerate civillian deaths and is willing to pay you well for your work."/>
+			<property name="difficulty" value="insane"/>
+			<property name="completiontype" value="TurnIn"/>
+			<property name="shareable" value="true"/>
+			
+			<objective type="RandomGoto" value="150" phase="1">
+				<property name="completion_distance" value="100"/>
+			</objective>
+
+			<objective type="RallyPoint">
+				<property name="start_mode" value="Create"/>
+				<property name="phase" value="2"/>
+			</objective>
+
+			<action type="SpawnEnemy" id="zombieScreamer" value="3" phase="3"/>
+			
+			<action type="SpawnEnemy" id="ZombieFireBossV3" value="1" phase="3"/>
+			<objective type="ZombieKill" id="ZombieFireBossV3" value="1" phase="3"/>
+			
+			<action type="SpawnEnemy" id="zombieFireBoss" value="30" phase="3" />
+
+			<objective type="InteractWithNPC">
+				<property name="phase" value="4"/>
+			</objective>
+
+			<reward type="Exp" value="500"/>
+			<!-- You can define a range of rewards like <reward type="Item" id="casinoCoin" value="200-500"/> -->
+			<reward type="LootItem" id="zmklegendaryT3" ischosen="true" value="1"/> 
+ 	 			<reward type="LootItem" id="zmkresources" ischosen="true" value="1"/>
+		</quest>
+
+<!--ZombieFireBoss End -->		
+		
+<!--ZombiePukerBoss Start -->
+
+<quest id="challenge_PukerBoss LV1">
+			<property name="name" value="Kill PukerBoss"/>
+			<property name="subtitle" value="Kill PukerBoss"/>
+			<property name="description" value="Get rid of the Problem"/>
+			<property name="icon" value="ui_game_symbol_zombie"/>
+			<property name="repeatable" value="true"/>
+			<property name="category_key" value="challenge"/>
+			<property name="offer" value="Dart Feld, The true leader behind the clan, known as the 'F1' of 'The 5' has requested you to take care of a special infected that has been spotted in the area. This special infected has been causing major problems with smaller communities. Dart does not tolerate civillian deaths and is willing to pay you well for your work."/>
+			<property name="difficulty" value="insane"/>
+			<property name="completiontype" value="TurnIn"/>
+			<property name="shareable" value="true"/>
+			
+			<objective type="RandomGoto" value="150" phase="1">
+				<property name="completion_distance" value="100"/>
+			</objective>
+
+			<objective type="RallyPoint">
+				<property name="start_mode" value="Create"/>
+				<property name="phase" value="2"/>
+			</objective>	
+			
+			<action type="SpawnEnemy" id="zombieScreamer" value="3" phase="3"/>
+			
+			<action type="SpawnEnemy" id="ZombiePukerBossV1" value="1" phase="3"/>
+			<objective type="ZombieKill" id="ZombiePukerBossV1" value="1" phase="3"/>
+			
+			<action type="SpawnEnemy" id="zombieMoePuker" value="10" phase="3" />
+
+			<objective type="InteractWithNPC">
+				<property name="phase" value="4"/>
+			</objective>
+
+			<reward type="Exp" value="500"/>
+			<!-- You can define a range of rewards like <reward type="Item" id="casinoCoin" value="200-500"/> -->
+			<reward type="LootItem" id="zmklegendaryT1" ischosen="true" value="1"/> 
+ 	 			<reward type="LootItem" id="zmkresources" ischosen="true" value="1"/>
+		</quest>
+
+<quest id="challenge_PukerBoss LV2">
+			<property name="name" value="Kill PukerBoss"/>
+			<property name="subtitle" value="Kill PukerBoss"/>
+			<property name="description" value="Get rid of the Problem"/>
+			<property name="icon" value="ui_game_symbol_zombie"/>
+			<property name="repeatable" value="true"/>
+			<property name="category_key" value="challenge"/>
+			<property name="offer" value="Dart Feld, The true leader behind the clan, known as the 'F1' of 'The 5' has requested you to take care of a special infected that has been spotted in the area. This special infected has been causing major problems with smaller communities. Dart does not tolerate civillian deaths and is willing to pay you well for your work."/>
+			<property name="difficulty" value="insane"/>
+			<property name="completiontype" value="TurnIn"/>
+			<property name="shareable" value="true"/>
+			
+			<objective type="RandomGoto" value="150" phase="1">
+				<property name="completion_distance" value="100"/>
+			</objective>
+
+			<objective type="RallyPoint">
+				<property name="start_mode" value="Create"/>
+				<property name="phase" value="2"/>
+			</objective>
+			
+			<action type="SpawnEnemy" id="zombieScreamer" value="3" phase="3"/>
+			
+			<action type="SpawnEnemy" id="ZombiePukerBossV2" value="1" phase="3"/>
+			<objective type="ZombieKill" id="ZombiePukerBossV2" value="1" phase="3"/>
+			
+			<action type="SpawnEnemy" id="zombieMoePukerFeral" value="20" phase="3" />
+
+			<objective type="InteractWithNPC">
+				<property name="phase" value="4"/>
+			</objective>
+
+			<reward type="Exp" value="500"/>
+			<!-- You can define a range of rewards like <reward type="Item" id="casinoCoin" value="200-500"/> -->
+			<reward type="LootItem" id="zmklegendaryT2" ischosen="true" value="1"/> 
+ 	 			<reward type="LootItem" id="zmkresources" ischosen="true" value="1"/>
+		</quest>
+
+<quest id="challenge_PukerBoss LV3">
+			<property name="name" value="Kill PukerBoss"/>
+			<property name="subtitle" value="Kill PukerBoss"/>
+			<property name="description" value="Get rid of the Problem"/>
+			<property name="icon" value="ui_game_symbol_zombie"/>
+			<property name="repeatable" value="true"/>
+			<property name="category_key" value="challenge"/>
+			<property name="offer" value="Dart Feld, The true leader behind the clan, known as the 'F1' of 'The 5' has requested you to take care of a special infected that has been spotted in the area. This special infected has been causing major problems with smaller communities. Dart does not tolerate civillian deaths and is willing to pay you well for your work."/>
+			<property name="difficulty" value="insane"/>
+			<property name="completiontype" value="TurnIn"/>
+			<property name="shareable" value="true"/>
+			
+			<objective type="RandomGoto" value="150" phase="1">
+				<property name="completion_distance" value="100"/>
+			</objective>
+
+			<objective type="RallyPoint">
+				<property name="start_mode" value="Create"/>
+				<property name="phase" value="2"/>
+			</objective>
+			
+			<action type="SpawnEnemy" id="zombieScreamer" value="3" phase="3"/>
+			
+			<action type="SpawnEnemy" id="ZombiePukerBossV3" value="1" phase="3"/>
+			<objective type="ZombieKill" id="ZombiePukerBossV3" value="1" phase="3"/>
+			
+			<action type="SpawnEnemy" id="zombieMoePukerRadiated" value="30" phase="3" />
+
+			<objective type="InteractWithNPC">
+				<property name="phase" value="4"/>
+			</objective>
+
+			<reward type="Exp" value="500"/>
+			<!-- You can define a range of rewards like <reward type="Item" id="casinoCoin" value="200-500"/> -->
+			<reward type="LootItem" id="zmklegendaryT3" ischosen="true" value="1"/> 
+ 	 			<reward type="LootItem" id="zmkresources" ischosen="true" value="1"/>
+		</quest>		
+	
+<!--ZombiePukerBoss's End -->
+
+<!--ZombieBurningManBoss Start -->	
+	
+<quest id="challenge_Burning_Man LV1">
+			<property name="name" value="Kill BurningMan"/>
+			<property name="subtitle" value="Kill BurningMan"/>
+			<property name="description" value="Get rid of the Problem"/>
+			<property name="icon" value="ui_game_symbol_zombie"/>
+			<property name="repeatable" value="true"/>
+			<property name="category_key" value="challenge"/>
+			<property name="offer" value="Dart Feld, The true leader behind the clan, known as the 'F1' of 'The 5' has requested you to take care of a special infected that has been spotted in the area. This special infected has been causing major problems with smaller communities. Dart does not tolerate civillian deaths and is willing to pay you well for your work."/>
+			<property name="difficulty" value="insane"/>
+			<property name="completiontype" value="TurnIn"/>
+			<property name="shareable" value="true"/>
+			
+			<objective type="RandomGoto" value="150" phase="1">
+				<property name="completion_distance" value="100"/>
+			</objective>
+
+			<objective type="RallyPoint">
+				<property name="start_mode" value="Create"/>
+				<property name="phase" value="2"/>
+			</objective>
+			
+			<action type="SpawnEnemy" id="zombieScreamer" value="3" phase="3"/>
+			
+			<action type="SpawnEnemy" id="ZombieBurningManBossV1" value="1" phase="3"/>
+			<objective type="ZombieKill" id="ZombieBurningManBossV1" value="1" phase="3"/>
+			
+			<action type="SpawnEnemy" id="zombieBurningMan" value="10" phase="3" />
+
+			<objective type="InteractWithNPC">
+				<property name="phase" value="4"/>
+			</objective>
+
+			<reward type="Exp" value="500"/>
+			<!-- You can define a range of rewards like <reward type="Item" id="casinoCoin" value="200-500"/> -->
+			<reward type="LootItem" id="zmklegendaryT1" ischosen="true" value="1"/> 
+ 	 			<reward type="LootItem" id="zmkresources" ischosen="true" value="1"/>
+		</quest>	
+	
+<quest id="challenge_Burning_Man LV2">
+			<property name="name" value="Kill BurningMan"/>
+			<property name="subtitle" value="Kill BurningMan"/>
+			<property name="description" value="Get rid of the Problem"/>
+			<property name="icon" value="ui_game_symbol_zombie"/>
+			<property name="repeatable" value="true"/>
+			<property name="category_key" value="challenge"/>
+			<property name="offer" value="Dart Feld, The true leader behind the clan, known as the 'F1' of 'The 5' has requested you to take care of a special infected that has been spotted in the area. This special infected has been causing major problems with smaller communities. Dart does not tolerate civillian deaths and is willing to pay you well for your work."/>
+			<property name="difficulty" value="insane"/>
+			<property name="completiontype" value="TurnIn"/>
+			<property name="shareable" value="true"/>
+			
+			<objective type="RandomGoto" value="150" phase="1">
+				<property name="completion_distance" value="100"/>
+			</objective>
+
+			<objective type="RallyPoint">
+				<property name="start_mode" value="Create"/>
+				<property name="phase" value="2"/>
+			</objective>
+			
+			<action type="SpawnEnemy" id="zombieScreamer" value="3" phase="3"/>
+			
+			<action type="SpawnEnemy" id="ZombieBurningManBossV2" value="1" phase="3"/>
+			<objective type="ZombieKill" id="ZombieBurningManBossV2" value="1" phase="3"/>
+			
+			<action type="SpawnEnemy" id="zombieBurningMan" value="20" phase="3" />
+
+			<objective type="InteractWithNPC">
+				<property name="phase" value="4"/>
+			</objective>
+
+			<reward type="Exp" value="500"/>
+			<!-- You can define a range of rewards like <reward type="Item" id="casinoCoin" value="200-500"/> -->
+			<reward type="LootItem" id="zmklegendaryT2" ischosen="true" value="1"/> 
+ 	 			<reward type="LootItem" id="zmkresources" ischosen="true" value="1"/>
+		</quest>		
+
+<quest id="challenge_Burning_Man LV3">
+			<property name="name" value="Kill BurningMan"/>
+			<property name="subtitle" value="Kill BurningMan"/>
+			<property name="description" value="Get rid of the Problem"/>
+			<property name="icon" value="ui_game_symbol_zombie"/>
+			<property name="repeatable" value="true"/>
+			<property name="category_key" value="challenge"/>
+			<property name="offer" value="Dart Feld, The true leader behind the clan, known as the 'F1' of 'The 5' has requested you to take care of a special infected that has been spotted in the area. This special infected has been causing major problems with smaller communities. Dart does not tolerate civillian deaths and is willing to pay you well for your work."/>
+			<property name="difficulty" value="insane"/>
+			<property name="completiontype" value="TurnIn"/>
+			<property name="shareable" value="true"/>
+			
+			<objective type="RandomGoto" value="150" phase="1">
+				<property name="completion_distance" value="100"/>
+			</objective>
+
+			<objective type="RallyPoint">
+				<property name="start_mode" value="Create"/>
+				<property name="phase" value="2"/>
+			</objective>
+			
+			<action type="SpawnEnemy" id="zombieScreamer" value="3" phase="3"/>
+			
+			<action type="SpawnEnemy" id="ZombieBurningManBossV3" value="1" phase="3"/>
+			<objective type="ZombieKill" id="ZombieBurningManBossV3" value="1" phase="3"/>
+			
+			<action type="SpawnEnemy" id="zombieBurningMan" value="30" phase="3" />
+
+			<objective type="InteractWithNPC">
+				<property name="phase" value="4"/>
+			</objective>
+
+			<reward type="Exp" value="500"/>
+			<!-- You can define a range of rewards like <reward type="Item" id="casinoCoin" value="200-500"/> -->
+			<reward type="LootItem" id="zmklegendaryT3" ischosen="true" value="1"/> 
+ 	 			<reward type="LootItem" id="zmkresources" ischosen="true" value="1"/>
+		</quest>	
+
+<!--ZombieBurningManBoss End -->
+
+<!--ZombieBlazingManBoss-->
+
+<quest id="challenge_Blazing_Man LV1">
+			<property name="name" value="Kill BlazingMan"/>
+			<property name="subtitle" value="Kill BlazingMan"/>
+			<property name="description" value="Get rid of the Problem"/>
+			<property name="icon" value="ui_game_symbol_zombie"/>
+			<property name="repeatable" value="true"/>
+			<property name="category_key" value="challenge"/>
+			<property name="offer" value="Dart Feld, The true leader behind the clan, known as the 'F1' of 'The 5' has requested you to take care of a special infected that has been spotted in the area. This special infected has been causing major problems with smaller communities. Dart does not tolerate civillian deaths and is willing to pay you well for your work."/>
+			<property name="difficulty" value="insane"/>
+			<property name="completiontype" value="TurnIn"/>
+			<property name="shareable" value="true"/>
+			
+			<objective type="RandomGoto" value="150" phase="1">
+				<property name="completion_distance" value="100"/>
+			</objective>
+
+			<objective type="RallyPoint">
+				<property name="start_mode" value="Create"/>
+				<property name="phase" value="2"/>
+			</objective>
+			
+			<action type="SpawnEnemy" id="zombieScreamer" value="3" phase="3"/>
+			
+			<action type="SpawnEnemy" id="ZombieBlazingManBossV1" value="1" phase="3"/>
+			<objective type="ZombieKill" id="ZombieBlazingManBossV1" value="1" phase="3"/>
+			
+			<action type="SpawnEnemy" id="zombieBlazingMan" value="10" phase="3" />
+
+			<objective type="InteractWithNPC">
+				<property name="phase" value="4"/>
+			</objective>
+
+			<reward type="Exp" value="500"/>
+			<!-- You can define a range of rewards like <reward type="Item" id="casinoCoin" value="200-500"/> -->
+			<reward type="LootItem" id="zmklegendaryT1" ischosen="true" value="1"/> 
+ 	 			<reward type="LootItem" id="zmkresources" ischosen="true" value="1"/>
+		</quest>	
+
+<quest id="challenge_Blazing_Man LV2">
+			<property name="name" value="Kill BlazingMan"/>
+			<property name="subtitle" value="Kill BlazingMan"/>
+			<property name="description" value="Get rid of the Problem"/>
+			<property name="icon" value="ui_game_symbol_zombie"/>
+			<property name="repeatable" value="true"/>
+			<property name="category_key" value="challenge"/>
+			<property name="offer" value="Dart Feld, The true leader behind the clan, known as the 'F1' of 'The 5' has requested you to take care of a special infected that has been spotted in the area. This special infected has been causing major problems with smaller communities. Dart does not tolerate civillian deaths and is willing to pay you well for your work."/>
+			<property name="difficulty" value="insane"/>
+			<property name="completiontype" value="TurnIn"/>
+			<property name="shareable" value="true"/>
+			
+			<objective type="RandomGoto" value="150" phase="1">
+				<property name="completion_distance" value="100"/>
+			</objective>
+
+			<objective type="RallyPoint">
+				<property name="start_mode" value="Create"/>
+				<property name="phase" value="2"/>
+			</objective>
+			
+			<action type="SpawnEnemy" id="zombieScreamer" value="3" phase="3"/>
+			
+			<action type="SpawnEnemy" id="ZombieBlazingManBossV2" value="1" phase="3"/>
+			<objective type="ZombieKill" id="ZombieBlazingManBossV2" value="1" phase="3"/>
+			
+			<action type="SpawnEnemy" id="zombieBlazingMan" value="20" phase="3" />
+
+			<objective type="InteractWithNPC">
+				<property name="phase" value="4"/>
+			</objective>
+
+			<reward type="Exp" value="500"/>
+			<!-- You can define a range of rewards like <reward type="Item" id="casinoCoin" value="200-500"/> -->
+			<reward type="LootItem" id="zmklegendaryT2" ischosen="true" value="1"/> 
+ 	 			<reward type="LootItem" id="zmkresources" ischosen="true" value="1"/>
+		</quest>	
+
+<quest id="challenge_Blazing_Man LV3">
+			<property name="name" value="Kill BlazingMan"/>
+			<property name="subtitle" value="Kill BlazingMan"/>
+			<property name="description" value="Get rid of the Problem"/>
+			<property name="icon" value="ui_game_symbol_zombie"/>
+			<property name="repeatable" value="true"/>
+			<property name="category_key" value="challenge"/>
+			<property name="offer" value="Dart Feld, The true leader behind the clan, known as the 'F1' of 'The 5' has requested you to take care of a special infected that has been spotted in the area. This special infected has been causing major problems with smaller communities. Dart does not tolerate civillian deaths and is willing to pay you well for your work."/>
+			<property name="difficulty" value="insane"/>
+			<property name="completiontype" value="TurnIn"/>
+			<property name="shareable" value="true"/>
+			
+			<objective type="RandomGoto" value="150" phase="1">
+				<property name="completion_distance" value="100"/>
+			</objective>
+
+			<objective type="RallyPoint">
+				<property name="start_mode" value="Create"/>
+				<property name="phase" value="2"/>
+			</objective>
+			
+			<action type="SpawnEnemy" id="zombieScreamer" value="3" phase="3"/>
+			
+			<action type="SpawnEnemy" id="ZombieBlazingManBossV3" value="1" phase="3"/>
+			<objective type="ZombieKill" id="ZombieBlazingManBossV3" value="1" phase="3"/>
+			
+			<action type="SpawnEnemy" id="zombieBlazingMan" value="30" phase="3" />
+
+			<objective type="InteractWithNPC">
+				<property name="phase" value="4"/>
+			</objective>
+
+			<reward type="Exp" value="500"/>
+			<!-- You can define a range of rewards like <reward type="Item" id="casinoCoin" value="200-500"/> -->
+			<reward type="LootItem" id="zmklegendaryT3" ischosen="true" value="1"/> 
+ 	 			<reward type="LootItem" id="zmkresources" ischosen="true" value="1"/>
+		</quest>
+
+<!--ZombieBlazingManBoss End -->
+
+<!--ZombieScreamerBoss Start -->
+
+<quest id="challenge_ScreamerQueen LV1">
+			<property name="name" value="Kill ScreamerBoss"/>
+			<property name="subtitle" value="Kill ScreamerBoss"/>
+			<property name="description" value="Get rid of the Problem"/>
+			<property name="icon" value="ui_game_symbol_zombie"/>
+			<property name="repeatable" value="true"/>
+			<property name="category_key" value="challenge"/>
+			<property name="offer" value="Dart Feld, The true leader behind the clan, known as the 'F1' of 'The 5' has requested you to take care of a special infected that has been spotted in the area. This special infected has been causing major problems with smaller communities. Dart does not tolerate civillian deaths and is willing to pay you well for your work."/>
+			<property name="difficulty" value="insane"/>
+			<property name="completiontype" value="TurnIn"/>
+			<property name="shareable" value="true"/>
+			
+			<objective type="RandomGoto" value="150" phase="1">
+				<property name="completion_distance" value="100"/>
+			</objective>
+
+			<objective type="RallyPoint">
+				<property name="start_mode" value="Create"/>
+				<property name="phase" value="2"/>
+			</objective>
+			
+			<action type="SpawnEnemy" id="zombieScreamer" value="3" phase="3"/>
+			
+			<action type="SpawnEnemy" id="ZombieScreamerBossV1" value="1" phase="3"/>
+			<objective type="ZombieKill" id="ZombieScreamerBossV1" value="1" phase="3"/>
+			
+			<action type="SpawnEnemy" id="zombieScreamerBoss" value="10" phase="3" />
+
+			<objective type="InteractWithNPC">
+				<property name="phase" value="4"/>
+			</objective>
+
+			<reward type="Exp" value="500"/>
+			<!-- You can define a range of rewards like <reward type="Item" id="casinoCoin" value="200-500"/> -->
+			<reward type="LootItem" id="zmklegendaryT1" ischosen="true" value="1"/> 
+ 	 			<reward type="LootItem" id="zmkresources" ischosen="true" value="1"/>
+		</quest>
+
+<quest id="challenge_ScreamerQueen LV2">
+			<property name="name" value="Kill ScreamerBoss"/>
+			<property name="subtitle" value="Kill ScreamerBoss"/>
+			<property name="description" value="Get rid of the Problem"/>
+			<property name="icon" value="ui_game_symbol_zombie"/>
+			<property name="repeatable" value="true"/>
+			<property name="category_key" value="challenge"/>
+			<property name="offer" value="Dart Feld, The true leader behind the clan, known as the 'F1' of 'The 5' has requested you to take care of a special infected that has been spotted in the area. This special infected has been causing major problems with smaller communities. Dart does not tolerate civillian deaths and is willing to pay you well for your work."/>
+			<property name="difficulty" value="insane"/>
+			<property name="completiontype" value="TurnIn"/>
+			<property name="shareable" value="true"/>
+			
+			<objective type="RandomGoto" value="150" phase="1">
+				<property name="completion_distance" value="100"/>
+			</objective>
+
+			<objective type="RallyPoint">
+				<property name="start_mode" value="Create"/>
+				<property name="phase" value="2"/>
+			</objective>
+			
+			<action type="SpawnEnemy" id="zombieScreamer" value="3" phase="3"/>
+			
+			<action type="SpawnEnemy" id="ZombieScreamerBossV2" value="1" phase="3"/>
+			<objective type="ZombieKill" id="ZombieScreamerBossV2" value="1" phase="3"/>
+			
+			<action type="SpawnEnemy" id="zombieScreamerBoss" value="20" phase="3" />
+
+			<objective type="InteractWithNPC">
+				<property name="phase" value="4"/>
+			</objective>
+
+			<reward type="Exp" value="500"/>
+			<!-- You can define a range of rewards like <reward type="Item" id="casinoCoin" value="200-500"/> -->
+			<reward type="LootItem" id="zmklegendaryT2" ischosen="true" value="1"/> 
+ 	 			<reward type="LootItem" id="zmkresources" ischosen="true" value="1"/>
+		</quest>
+
+<quest id="challenge_ScreamerQueen LV3">
+			<property name="name" value="Kill ScreamerBoss"/>
+			<property name="subtitle" value="Kill ScreamerBoss"/>
+			<property name="description" value="Get rid of the Problem"/>
+			<property name="icon" value="ui_game_symbol_zombie"/>
+			<property name="repeatable" value="true"/>
+			<property name="category_key" value="challenge"/>
+			<property name="offer" value="Dart Feld, The true leader behind the clan, known as the 'F1' of 'The 5' has requested you to take care of a special infected that has been spotted in the area. This special infected has been causing major problems with smaller communities. Dart does not tolerate civillian deaths and is willing to pay you well for your work."/>
+			<property name="difficulty" value="insane"/>
+			<property name="completiontype" value="TurnIn"/>
+			<property name="shareable" value="true"/>
+			
+			<objective type="RandomGoto" value="150" phase="1">
+				<property name="completion_distance" value="100"/>
+			</objective>
+
+			<objective type="RallyPoint">
+				<property name="start_mode" value="Create"/>
+				<property name="phase" value="2"/>
+			</objective>
+			
+			<action type="SpawnEnemy" id="zombieScreamer" value="3" phase="3"/>
+			
+			<action type="SpawnEnemy" id="ZombieScreamerBossV3" value="1" phase="3"/>
+			<objective type="ZombieKill" id="ZombieScreamerBossV3" value="1" phase="3"/>
+			
+			<action type="SpawnEnemy" id="zombieScreamerBoss" value="30" phase="3" />
+
+			<objective type="InteractWithNPC">
+				<property name="phase" value="4"/>
+			</objective>
+
+			<reward type="Exp" value="500"/>
+			<!-- You can define a range of rewards like <reward type="Item" id="casinoCoin" value="200-500"/> -->
+			<reward type="LootItem" id="zmklegendaryT3" ischosen="true" value="1"/> 
+ 	 			<reward type="LootItem" id="zmkresources" ischosen="true" value="1"/>
+		</quest>
+
+
+<!--ZombieScreamerBoss End -->
+
+<!--ZombieShockerBoss Start -->
+
+<quest id="challenge_Shocker LV1">
+			<property name="name" value="Kill ShockerBoss"/>
+			<property name="subtitle" value="Kill ShockerBoss"/>
+			<property name="description" value="Get rid of the Problem"/>
+			<property name="icon" value="ui_game_symbol_zombie"/>
+			<property name="repeatable" value="true"/>
+			<property name="category_key" value="challenge"/>
+			<property name="offer" value="Dart Feld, The true leader behind the clan, known as the 'F1' of 'The 5' has requested you to take care of a special infected that has been spotted in the area. This special infected has been causing major problems with smaller communities. Dart does not tolerate civillian deaths and is willing to pay you well for your work."/>
+			<property name="difficulty" value="insane"/>
+			<property name="completiontype" value="TurnIn"/>
+			<property name="shareable" value="true"/>
+			
+			<objective type="RandomGoto" value="150" phase="1">
+				<property name="completion_distance" value="100"/>
+			</objective>
+
+			<objective type="RallyPoint">
+				<property name="start_mode" value="Create"/>
+				<property name="phase" value="2"/>
+			</objective>
+			
+			<action type="SpawnEnemy" id="zombieScreamer" value="3" phase="3"/>
+			
+			<action type="SpawnEnemy" id="ZombieShockerBossV1" value="1" phase="3"/>
+			<objective type="ZombieKill" id="ZombieShockerBossV1" value="1" phase="3"/>
+			
+			<action type="SpawnEnemy" id="zombieShocker" value="10" phase="3" />
+
+			<objective type="InteractWithNPC">
+				<property name="phase" value="4"/>
+			</objective>
+
+			<reward type="Exp" value="500"/>
+			<!-- You can define a range of rewards like <reward type="Item" id="casinoCoin" value="200-500"/> -->
+			<reward type="LootItem" id="zmklegendaryT1" ischosen="true" value="1"/> 
+ 	 			<reward type="LootItem" id="zmkresources" ischosen="true" value="1"/>
+		</quest>
+
+<quest id="challenge_Shocker LV2">
+			<property name="name" value="Kill ShockerBoss"/>
+			<property name="subtitle" value="Kill ShockerBoss"/>
+			<property name="description" value="Get rid of the Problem"/>
+			<property name="icon" value="ui_game_symbol_zombie"/>
+			<property name="repeatable" value="true"/>
+			<property name="category_key" value="challenge"/>
+			<property name="offer" value="Dart Feld, The true leader behind the clan, known as the 'F1' of 'The 5' has requested you to take care of a special infected that has been spotted in the area. This special infected has been causing major problems with smaller communities. Dart does not tolerate civillian deaths and is willing to pay you well for your work."/>
+			<property name="difficulty" value="insane"/>
+			<property name="completiontype" value="TurnIn"/>
+			<property name="shareable" value="true"/>
+			
+			<objective type="RandomGoto" value="150" phase="1">
+				<property name="completion_distance" value="100"/>
+			</objective>
+
+			<objective type="RallyPoint">
+				<property name="start_mode" value="Create"/>
+				<property name="phase" value="2"/>
+			</objective>	
+			
+			<action type="SpawnEnemy" id="zombieScreamer" value="3" phase="3"/>
+			
+			<action type="SpawnEnemy" id="ZombieShockerBossV2" value="1" phase="3"/>
+			<objective type="ZombieKill" id="ZombieShockerBossV2" value="1" phase="3"/>
+			
+			<action type="SpawnEnemy" id="zombieShocker" value="20" phase="3" />
+
+			<objective type="InteractWithNPC">
+				<property name="phase" value="4"/>
+			</objective>
+
+			<reward type="Exp" value="500"/>
+			<!-- You can define a range of rewards like <reward type="Item" id="casinoCoin" value="200-500"/> -->
+			<reward type="LootItem" id="zmklegendaryT2" ischosen="true" value="1"/> 
+ 	 			<reward type="LootItem" id="zmkresources" ischosen="true" value="1"/>
+		</quest>
+		
+<quest id="challenge_Shocker LV3">
+			<property name="name" value="Kill ShockerBoss"/>
+			<property name="subtitle" value="Kill ShockerBoss"/>
+			<property name="description" value="Get rid of the Problem"/>
+			<property name="icon" value="ui_game_symbol_zombie"/>
+			<property name="repeatable" value="true"/>
+			<property name="category_key" value="challenge"/>
+			<property name="offer" value="Dart Feld, The true leader behind the clan, known as the 'F1' of 'The 5' has requested you to take care of a special infected that has been spotted in the area. This special infected has been causing major problems with smaller communities. Dart does not tolerate civillian deaths and is willing to pay you well for your work."/>
+			<property name="difficulty" value="insane"/>
+			<property name="completiontype" value="TurnIn"/>
+			<property name="shareable" value="true"/>
+			
+			<objective type="RandomGoto" value="150" phase="1">
+				<property name="completion_distance" value="100"/>
+			</objective>
+
+			<objective type="RallyPoint">
+				<property name="start_mode" value="Create"/>
+				<property name="phase" value="2"/>
+			</objective>
+			
+			<action type="SpawnEnemy" id="zombieScreamer" value="3" phase="3"/>
+			
+			<action type="SpawnEnemy" id="ZombieShockerBossV3" value="1" phase="3"/>
+			<objective type="ZombieKill" id="ZombieShockerBossV3" value="1" phase="3"/>
+			
+			<action type="SpawnEnemy" id="zombieShocker" value="30" phase="3" />
+
+			<objective type="InteractWithNPC">
+				<property name="phase" value="4"/>
+			</objective>
+
+			<reward type="Exp" value="500"/>
+			<!-- You can define a range of rewards like <reward type="Item" id="casinoCoin" value="200-500"/> -->
+			<reward type="LootItem" id="zmklegendaryT3" ischosen="true" value="1"/> 
+ 	 			<reward type="LootItem" id="zmkresources" ischosen="true" value="1"/>
+		</quest>
+
+<!--ZombieShockerBoss End -->
+
+<!--ZombieGunnerBoss Start -->
+
+<quest id="challenge_TakeCover LV1">
+			<property name="name" value="Kill ZombieGunnerBoss"/>
+			<property name="subtitle" value="Kill ZombieGunnerBoss"/>
+			<property name="description" value="Get rid of the Problem"/>
+			<property name="icon" value="ui_game_symbol_zombie"/>
+			<property name="repeatable" value="true"/>
+			<property name="category_key" value="challenge"/>
+			<property name="offer" value="Dart Feld, The true leader behind the clan, known as the 'F1' of 'The 5' has requested you to take care of a special infected that has been spotted in the area. This special infected has been causing major problems with smaller communities. Dart does not tolerate civillian deaths and is willing to pay you well for your work."/>
+			<property name="difficulty" value="insane"/>
+			<property name="completiontype" value="TurnIn"/>
+			<property name="shareable" value="true"/>
+			
+			<objective type="RandomGoto" value="150" phase="1">
+				<property name="completion_distance" value="100"/>
+			</objective>
+
+			<objective type="RallyPoint">
+				<property name="start_mode" value="Create"/>
+				<property name="phase" value="2"/>
+			</objective>
+			
+			<action type="SpawnEnemy" id="zombieScreamer" value="3" phase="3"/>
+			
+			<action type="SpawnEnemy" id="ZombieGunnerBossV1" value="1" phase="3"/>
+			<objective type="ZombieKill" id="ZombieGunnerBossV1" value="1" phase="3"/>
+			
+			<action type="SpawnEnemy" id="zombieGunner" value="10" phase="3" />
+
+			<objective type="InteractWithNPC">
+				<property name="phase" value="4"/>
+			</objective>
+
+			<reward type="Exp" value="500"/>
+			<!-- You can define a range of rewards like <reward type="Item" id="casinoCoin" value="200-500"/> -->
+			<reward type="LootItem" id="zmklegendaryT1" ischosen="true" value="1"/> 
+ 	 			<reward type="LootItem" id="zmkresources" ischosen="true" value="1"/>
+		</quest>
+
+<quest id="challenge_TakeCover LV2">
+			<property name="name" value="Kill ZombieGunnerBoss"/>
+			<property name="subtitle" value="Kill ZombieGunnerBoss"/>
+			<property name="description" value="Get rid of the Problem"/>
+			<property name="icon" value="ui_game_symbol_zombie"/>
+			<property name="repeatable" value="true"/>
+			<property name="category_key" value="challenge"/>
+			<property name="offer" value="Dart Feld, The true leader behind the clan, known as the 'F1' of 'The 5' has requested you to take care of a special infected that has been spotted in the area. This special infected has been causing major problems with smaller communities. Dart does not tolerate civillian deaths and is willing to pay you well for your work."/>
+			<property name="difficulty" value="insane"/>
+			<property name="completiontype" value="TurnIn"/>
+			<property name="shareable" value="true"/>
+			
+			<objective type="RandomGoto" value="150" phase="1">
+				<property name="completion_distance" value="100"/>
+			</objective>
+
+			<objective type="RallyPoint">
+				<property name="start_mode" value="Create"/>
+				<property name="phase" value="2"/>
+			</objective>
+			
+			<action type="SpawnEnemy" id="zombieScreamer" value="3" phase="3"/>
+			
+			<action type="SpawnEnemy" id="ZombieGunnerBossV2" value="1" phase="3"/>
+			<objective type="ZombieKill" id="ZombieGunnerBossV2" value="1" phase="3"/>
+			
+			<action type="SpawnEnemy" id="zombieGunner" value="20" phase="3" />
+
+			<objective type="InteractWithNPC">
+				<property name="phase" value="4"/>
+			</objective>
+
+			<reward type="Exp" value="500"/>
+			<!-- You can define a range of rewards like <reward type="Item" id="casinoCoin" value="200-500"/> -->
+			<reward type="LootItem" id="zmklegendaryT2" ischosen="true" value="1"/> 
+ 	 			<reward type="LootItem" id="zmkresources" ischosen="true" value="1"/>
+		</quest>
+
+<quest id="challenge_TakeCover LV3">
+			<property name="name" value="Kill ZombieGunnerBoss"/>
+			<property name="subtitle" value="Kill ZombieGunnerBoss"/>
+			<property name="description" value="Get rid of the Problem"/>
+			<property name="icon" value="ui_game_symbol_zombie"/>
+			<property name="repeatable" value="true"/>
+			<property name="category_key" value="challenge"/>
+			<property name="offer" value="Dart Feld, The true leader behind the clan, known as the 'F1' of 'The 5' has requested you to take care of a special infected that has been spotted in the area. This special infected has been causing major problems with smaller communities. Dart does not tolerate civillian deaths and is willing to pay you well for your work."/>
+			<property name="difficulty" value="insane"/>
+			<property name="completiontype" value="TurnIn"/>
+			<property name="shareable" value="true"/>
+			
+			<objective type="RandomGoto" value="150" phase="1">
+				<property name="completion_distance" value="100"/>
+			</objective>
+
+			<objective type="RallyPoint">
+				<property name="start_mode" value="Create"/>
+				<property name="phase" value="2"/>
+			</objective>
+			
+			<action type="SpawnEnemy" id="zombieScreamer" value="3" phase="3"/>
+			
+			<action type="SpawnEnemy" id="ZombieGunnerBossV3" value="1" phase="3"/>
+			<objective type="ZombieKill" id="ZombieGunnerBossV3" value="1" phase="3"/>
+			
+			<action type="SpawnEnemy" id="zombieGunner" value="30" phase="3" />
+
+			<objective type="InteractWithNPC">
+				<property name="phase" value="4"/>
+			</objective>
+
+			<reward type="Exp" value="500"/>
+			<!-- You can define a range of rewards like <reward type="Item" id="casinoCoin" value="200-500"/> -->
+			<reward type="LootItem" id="zmklegendaryT3" ischosen="true" value="1"/> 
+ 	 			<reward type="LootItem" id="zmkresources" ischosen="true" value="1"/>
+		</quest>
+
+<!--ZombieGunnerBoss End -->
+
+<!--ZombieFireElfBoss Start -->
+
+<quest id="challenge_ElvesWithFlames LV1">
+			<property name="name" value="Kill FireElfBoss"/>
+			<property name="subtitle" value="Kill FireElfBoss"/>
+			<property name="description" value="Get rid of the Problem"/>
+			<property name="icon" value="ui_game_symbol_zombie"/>
+			<property name="repeatable" value="true"/>
+			<property name="category_key" value="challenge"/>
+			<property name="offer" value="Dart Feld, The true leader behind the clan, known as the 'F1' of 'The 5' has requested you to take care of a special infected that has been spotted in the area. This special infected has been causing major problems with smaller communities. Dart does not tolerate civillian deaths and is willing to pay you well for your work."/>
+			<property name="difficulty" value="insane"/>
+			<property name="completiontype" value="TurnIn"/>
+			<property name="shareable" value="true"/>
+			
+			<objective type="RandomGoto" value="150" phase="1">
+				<property name="completion_distance" value="100"/>
+			</objective>
+
+			<objective type="RallyPoint">
+				<property name="start_mode" value="Create"/>
+				<property name="phase" value="2"/>
+			</objective>
+			
+			<action type="SpawnEnemy" id="zombieScreamer" value="3" phase="3"/>
+			
+			<action type="SpawnEnemy" id="ZombieFireElfBossV1" value="1" phase="3"/>
+			<objective type="ZombieKill" id="ZombieFireElfBossV1" value="1" phase="3"/>
+			
+			<action type="SpawnEnemy" id="zombieFireElf" value="10" phase="3" />
+
+			<objective type="InteractWithNPC">
+				<property name="phase" value="4"/>
+			</objective>
+
+			<reward type="Exp" value="500"/>
+			<!-- You can define a range of rewards like <reward type="Item" id="casinoCoin" value="200-500"/> -->
+			<reward type="LootItem" id="zmklegendaryT1" ischosen="true" value="1"/> 
+ 	 			<reward type="LootItem" id="zmkresources" ischosen="true" value="1"/>
+		</quest>
+
+<quest id="challenge_ElvesWithFlames LV2">
+			<property name="name" value="Kill FireElfBoss"/>
+			<property name="subtitle" value="Kill FireElfBoss"/>
+			<property name="description" value="Get rid of the Problem"/>
+			<property name="icon" value="ui_game_symbol_zombie"/>
+			<property name="repeatable" value="true"/>
+			<property name="category_key" value="challenge"/>
+			<property name="offer" value="Dart Feld, The true leader behind the clan, known as the 'F1' of 'The 5' has requested you to take care of a special infected that has been spotted in the area. This special infected has been causing major problems with smaller communities. Dart does not tolerate civillian deaths and is willing to pay you well for your work."/>
+			<property name="difficulty" value="insane"/>
+			<property name="completiontype" value="TurnIn"/>
+			<property name="shareable" value="true"/>
+			
+			<objective type="RandomGoto" value="150" phase="1">
+				<property name="completion_distance" value="100"/>
+			</objective>
+
+			<objective type="RallyPoint">
+				<property name="start_mode" value="Create"/>
+				<property name="phase" value="2"/>
+			</objective>
+			
+			<action type="SpawnEnemy" id="zombieScreamer" value="3" phase="3"/>
+			
+			<action type="SpawnEnemy" id="ZombieFireElfBossV2" value="1" phase="3"/>
+			<objective type="ZombieKill" id="ZombieFireElfBossV2" value="1" phase="3"/>
+			
+			<action type="SpawnEnemy" id="zombieFireElf" value="20" phase="3" />
+
+			<objective type="InteractWithNPC">
+				<property name="phase" value="4"/>
+			</objective>
+
+			<reward type="Exp" value="500"/>
+			<!-- You can define a range of rewards like <reward type="Item" id="casinoCoin" value="200-500"/> -->
+			<reward type="LootItem" id="zmklegendaryT2" ischosen="true" value="1"/> 
+ 	 			<reward type="LootItem" id="zmkresources" ischosen="true" value="1"/>
+		</quest>
+
+<quest id="challenge_ElvesWithFlames LV3">
+			<property name="name" value="Kill FireElfBoss"/>
+			<property name="subtitle" value="Kill FireElfBoss"/>
+			<property name="description" value="Get rid of the Problem"/>
+			<property name="icon" value="ui_game_symbol_zombie"/>
+			<property name="repeatable" value="true"/>
+			<property name="category_key" value="challenge"/>
+			<property name="offer" value="Dart Feld, The true leader behind the clan, known as the 'F1' of 'The 5' has requested you to take care of a special infected that has been spotted in the area. This special infected has been causing major problems with smaller communities. Dart does not tolerate civillian deaths and is willing to pay you well for your work."/>
+			<property name="difficulty" value="insane"/>
+			<property name="completiontype" value="TurnIn"/>
+			<property name="shareable" value="true"/>
+			
+			<objective type="RandomGoto" value="150" phase="1">
+				<property name="completion_distance" value="100"/>
+			</objective>
+
+			<objective type="RallyPoint">
+				<property name="start_mode" value="Create"/>
+				<property name="phase" value="2"/>
+			</objective>
+			
+			<action type="SpawnEnemy" id="zombieScreamer" value="3" phase="3"/>
+			
+			<action type="SpawnEnemy" id="ZombieFireElfBossV3" value="1" phase="3"/>
+			<objective type="ZombieKill" id="ZombieFireElfBossV3" value="1" phase="3"/>
+			
+			<action type="SpawnEnemy" id="zombieFireElf" value="30" phase="3" />
+
+			<objective type="InteractWithNPC">
+				<property name="phase" value="4"/>
+			</objective>
+
+			<reward type="Exp" value="500"/>
+			<!-- You can define a range of rewards like <reward type="Item" id="casinoCoin" value="200-500"/> -->
+			<reward type="LootItem" id="zmklegendaryT3" ischosen="true" value="1"/> 
+ 	 			<reward type="LootItem" id="zmkresources" ischosen="true" value="1"/>
+		</quest>
+
+<!--FireElfBoss End -->
+
+<!--AquaBoss start -->
+
+<quest id="challenge_DryOut LV1">
+			<property name="name" value="Kill AquaZedBoss"/>
+			<property name="subtitle" value="Kill AquaZedBoss"/>
+			<property name="description" value="Get rid of the Problem"/>
+			<property name="icon" value="ui_game_symbol_zombie"/>
+			<property name="repeatable" value="true"/>
+			<property name="category_key" value="challenge"/>
+			<property name="offer" value="Dart Feld, The true leader behind the clan, known as the 'F1' of 'The 5' has requested you to take care of a special infected that has been spotted in the area. This special infected has been causing major problems with smaller communities. Dart does not tolerate civillian deaths and is willing to pay you well for your work."/>
+			<property name="difficulty" value="insane"/>
+			<property name="completiontype" value="TurnIn"/>
+			<property name="shareable" value="true"/>
+			
+			<objective type="RandomGoto" value="150" phase="1">
+				<property name="completion_distance" value="100"/>
+			</objective>
+
+			<objective type="RallyPoint">
+				<property name="start_mode" value="Create"/>
+				<property name="phase" value="2"/>
+			</objective>
+			
+			<action type="SpawnEnemy" id="zombieScreamer" value="3" phase="3"/>
+			
+			<action type="SpawnEnemy" id="ZombieAquaZedBossV1" value="1" phase="3"/>
+			<objective type="ZombieKill" id="ZombieAquaZedBossV1" value="1" phase="3"/>
+			
+			<action type="SpawnEnemy" id="zombieAquaZed" value="10" phase="3" />
+
+			<objective type="InteractWithNPC">
+				<property name="phase" value="4"/>
+			</objective>
+
+			<reward type="Exp" value="500"/>
+			<!-- You can define a range of rewards like <reward type="Item" id="casinoCoin" value="200-500"/> -->
+			<reward type="LootItem" id="zmklegendaryT1" ischosen="true" value="1"/> 
+ 	 			<reward type="LootItem" id="zmkresources" ischosen="true" value="1"/>
+		</quest>
+
+<quest id="challenge_DryOut LV2">
+			<property name="name" value="Kill AquaZedBoss"/>
+			<property name="subtitle" value="Kill AquaZedBoss"/>
+			<property name="description" value="Get rid of the Problem"/>
+			<property name="icon" value="ui_game_symbol_zombie"/>
+			<property name="repeatable" value="true"/>
+			<property name="category_key" value="challenge"/>
+			<property name="offer" value="Dart Feld, The true leader behind the clan, known as the 'F1' of 'The 5' has requested you to take care of a special infected that has been spotted in the area. This special infected has been causing major problems with smaller communities. Dart does not tolerate civillian deaths and is willing to pay you well for your work."/>
+			<property name="difficulty" value="insane"/>
+			<property name="completiontype" value="TurnIn"/>
+			<property name="shareable" value="true"/>
+			
+			<objective type="RandomGoto" value="150" phase="1">
+				<property name="completion_distance" value="100"/>
+			</objective>
+
+			<objective type="RallyPoint">
+				<property name="start_mode" value="Create"/>
+				<property name="phase" value="2"/>
+			</objective>
+			
+			<action type="SpawnEnemy" id="zombieScreamer" value="3" phase="3"/>
+			
+			<action type="SpawnEnemy" id="ZombieAquaZedBossV2" value="1" phase="3"/>
+			<objective type="ZombieKill" id="ZombieAquaZedBossV2" value="1" phase="3"/>
+			
+			<action type="SpawnEnemy" id="zombieAquaZed" value="20" phase="3" />
+
+			<objective type="InteractWithNPC">
+				<property name="phase" value="4"/>
+			</objective>
+
+			<reward type="Exp" value="500"/>
+			<!-- You can define a range of rewards like <reward type="Item" id="casinoCoin" value="200-500"/> -->
+			<reward type="LootItem" id="zmklegendaryT2" ischosen="true" value="1"/> 
+ 	 			<reward type="LootItem" id="zmkresources" ischosen="true" value="1"/>
+		</quest>
+
+<quest id="challenge_DryOut LV3">
+			<property name="name" value="Kill AquaZedBoss"/>
+			<property name="subtitle" value="Kill AquaZedBoss"/>
+			<property name="description" value="Get rid of the Problem"/>
+			<property name="icon" value="ui_game_symbol_zombie"/>
+			<property name="repeatable" value="true"/>
+			<property name="category_key" value="challenge"/>
+			<property name="offer" value="Dart Feld, The true leader behind the clan, known as the 'F1' of 'The 5' has requested you to take care of a special infected that has been spotted in the area. This special infected has been causing major problems with smaller communities. Dart does not tolerate civillian deaths and is willing to pay you well for your work."/>
+			<property name="difficulty" value="insane"/>
+			<property name="completiontype" value="TurnIn"/>
+			<property name="shareable" value="true"/>
+			
+			<objective type="RandomGoto" value="150" phase="1">
+				<property name="completion_distance" value="100"/>
+			</objective>
+
+			<objective type="RallyPoint">
+				<property name="start_mode" value="Create"/>
+				<property name="phase" value="2"/>
+			</objective>
+			
+			<action type="SpawnEnemy" id="zombieScreamer" value="3" phase="3"/>
+			
+			<action type="SpawnEnemy" id="ZombieAquaZedBossV3" value="1" phase="3"/>
+			<objective type="ZombieKill" id="ZombieAquaZedBossV3" value="1" phase="3"/>
+			
+			<action type="SpawnEnemy" id="zombieAquaZed" value="30" phase="3" />
+
+			<objective type="InteractWithNPC">
+				<property name="phase" value="4"/>
+			</objective>
+
+			<reward type="Exp" value="500"/>
+			<!-- You can define a range of rewards like <reward type="Item" id="casinoCoin" value="200-500"/> -->
+			<reward type="LootItem" id="zmklegendaryT3" ischosen="true" value="1"/> 
+ 	 			<reward type="LootItem" id="zmkresources" ischosen="true" value="1"/>
+		</quest>
+
+<!--AquaZedBoss End -->
+
+<!--MummyBoss -->
+
+<quest id="challenge_Mummified_Zombie LV1">
+			<property name="name" value="Kill MummyBoss"/>
+			<property name="subtitle" value="Kill MummyBoss"/>
+			<property name="description" value="Get rid of the Problem"/>
+			<property name="icon" value="ui_game_symbol_zombie"/>
+			<property name="repeatable" value="true"/>
+			<property name="category_key" value="challenge"/>
+			<property name="offer" value="Dart Feld, The true leader behind the clan, known as the 'F1' of 'The 5' has requested you to take care of a special infected that has been spotted in the area. This special infected has been causing major problems with smaller communities. Dart does not tolerate civillian deaths and is willing to pay you well for your work."/>
+			<property name="difficulty" value="insane"/>
+			<property name="completiontype" value="TurnIn"/>
+			<property name="shareable" value="true"/>
+			
+			<objective type="RandomGoto" value="150" phase="1">
+				<property name="completion_distance" value="100"/>
+			</objective>
+
+			<objective type="RallyPoint">
+				<property name="start_mode" value="Create"/>
+				<property name="phase" value="2"/>
+			</objective>
+			
+			<action type="SpawnEnemy" id="zombieScreamer" value="3" phase="3"/>
+			
+			<action type="SpawnEnemy" id="ZombieMummyBossV1" value="1" phase="3"/>
+			<objective type="ZombieKill" id="ZombieMummyBossV1" value="1" phase="3"/>
+			
+			<action type="SpawnEnemy" id="zombieMummy" value="10" phase="3" />
+
+			<objective type="InteractWithNPC">
+				<property name="phase" value="4"/>
+			</objective>
+
+			<reward type="Exp" value="500"/>
+			<!-- You can define a range of rewards like <reward type="Item" id="casinoCoin" value="200-500"/> -->
+			<reward type="LootItem" id="zmklegendaryT1" ischosen="true" value="1"/> 
+ 	 			<reward type="LootItem" id="zmkresources" ischosen="true" value="1"/>
+		</quest>
+
+<quest id="challenge_Mummified_Zombie LV2">
+			<property name="name" value="Kill MummyBoss"/>
+			<property name="subtitle" value="Kill MummyBoss"/>
+			<property name="description" value="Get rid of the Problem"/>
+			<property name="icon" value="ui_game_symbol_zombie"/>
+			<property name="repeatable" value="true"/>
+			<property name="category_key" value="challenge"/>
+			<property name="offer" value="Dart Feld, The true leader behind the clan, known as the 'F1' of 'The 5' has requested you to take care of a special infected that has been spotted in the area. This special infected has been causing major problems with smaller communities. Dart does not tolerate civillian deaths and is willing to pay you well for your work."/>
+			<property name="difficulty" value="insane"/>
+			<property name="completiontype" value="TurnIn"/>
+			<property name="shareable" value="true"/>
+			
+			<objective type="RandomGoto" value="150" phase="1">
+				<property name="completion_distance" value="100"/>
+			</objective>
+
+			<objective type="RallyPoint">
+				<property name="start_mode" value="Create"/>
+				<property name="phase" value="2"/>
+			</objective>
+			
+			<action type="SpawnEnemy" id="zombieScreamer" value="3" phase="3"/>
+			
+			<action type="SpawnEnemy" id="ZombieMummyBossV2" value="1" phase="3"/>
+			<objective type="ZombieKill" id="ZombieMummyBossV2" value="1" phase="3"/>
+			
+			<action type="SpawnEnemy" id="zombieMummy" value="20" phase="3" />
+
+			<objective type="InteractWithNPC">
+				<property name="phase" value="4"/>
+			</objective>
+
+			<reward type="Exp" value="500"/>
+			<!-- You can define a range of rewards like <reward type="Item" id="casinoCoin" value="200-500"/> -->
+			<reward type="LootItem" id="zmklegendaryT2" ischosen="true" value="1"/> 
+ 	 			<reward type="LootItem" id="zmkresources" ischosen="true" value="1"/>
+		</quest>
+
+<quest id="challenge_Mummified_Zombie LV3">
+			<property name="name" value="Kill MummyBoss"/>
+			<property name="subtitle" value="Kill MummyBoss"/>
+			<property name="description" value="Get rid of the Problem"/>
+			<property name="icon" value="ui_game_symbol_zombie"/>
+			<property name="repeatable" value="true"/>
+			<property name="category_key" value="challenge"/>
+			<property name="offer" value="Dart Feld, The true leader behind the clan, known as the 'F1' of 'The 5' has requested you to take care of a special infected that has been spotted in the area. This special infected has been causing major problems with smaller communities. Dart does not tolerate civillian deaths and is willing to pay you well for your work."/>
+			<property name="difficulty" value="insane"/>
+			<property name="completiontype" value="TurnIn"/>
+			<property name="shareable" value="true"/>
+			
+			<objective type="RandomGoto" value="150" phase="1">
+				<property name="completion_distance" value="100"/>
+			</objective>
+
+			<objective type="RallyPoint">
+				<property name="start_mode" value="Create"/>
+				<property name="phase" value="2"/>
+			</objective>
+			
+			<action type="SpawnEnemy" id="zombieScreamer" value="3" phase="3"/>
+			
+			<action type="SpawnEnemy" id="ZombieMummyBossV3" value="1" phase="3"/>
+			<objective type="ZombieKill" id="ZombieMummyBossV3" value="1" phase="3"/>
+			
+			<action type="SpawnEnemy" id="zombieMummy" value="30" phase="3" />
+
+			<objective type="InteractWithNPC">
+				<property name="phase" value="4"/>
+			</objective>
+
+			<reward type="Exp" value="500"/>
+			<!-- You can define a range of rewards like <reward type="Item" id="casinoCoin" value="200-500"/> -->
+			<reward type="LootItem" id="zmklegendaryT3" ischosen="true" value="1"/> 
+ 	 			<reward type="LootItem" id="zmkresources" ischosen="true" value="1"/>
+		</quest>
+
+<!--MummyBoss End -->
+
+
+<!--newquestingtype-->
+
+	<quest id=""> <!--insertquestnamehere-->
+		<property name="name_key" value="quest_tier6_fetch_clear"/><!--insertquestitemhere-->
+		<property name="subtitle_key" value="quest_fetch_clear_subtitle"/> <!--insertquestsubtitlehere-->
+		<property name="description_key" value="quest_fetch_clear_description"/><!--insertquest-->
+		<property name="icon" value="ui_game_symbol_quest"/><!--questiconhere-->
+		<property name="repeatable" value="true"/><!--makesquestsrepeatable-->
+		<property name="category_key" value="challenge"/><!--whatsortofquestitis-->
+		<property name="difficulty" value="medium"/><!--difficultyofthequest-->
+		<property name="difficulty_tier" value="6"/><!--whattieritis-->
+		<property name="offer_key" value="quest_tier6_fetch_clear_offer"/><!--questoffer-->
+		<property name="statement_key" value="quest_fetch_clear_statement"/><!--queststatement-->
+		<property name="response_key" value="quest_fetch_clear_response"/><!--questresponse-->
+		<property name="login_rally_reset" value="true"/>
+
+		<property name="completiontype" value="TurnIn"/><!--howthequestiscomplete-->
+		<property name="completion_key" value="quest_fetch_clear_completion"/>
+
+		<objective type="RandomPOIGoto">
+			<property name="phase" value="1"/>
+		</objective>
+
+		<objective type="RallyPoint">
+			<property name="phase" value="2"/>
+		</objective>
+
+		<objective type="ClearSleepers">
+			<property name="phase" value="3"/>
+		</objective>
+
+		<objective type="FetchFromContainer">
+			<property name="phase" value="3"/>
+			<property name="quest_item_ID" value="1"/>
+			<property name="item_count" value="1"/>
+			<property name="default_container" value=""/>  <!--insertcratehere-->
+		</objective>
+
+		<objective type="POIStayWithin">
+			<property name="phase" value="3"/>
+			<property name="radius" value="25"/>
+		</objective>
+		
+		
+		<objective type="ClearSleepers">
+			<property name="phase" value="4"/>
+		</objective>
+
+		<objective type="FetchFromContainer">
+			<property name="phase" value="4"/>
+			<property name="quest_item_ID" value="1"/>
+			<property name="item_count" value="1"/>
+			<property name="default_container" value=""/><!--insertcratehere-->
+		</objective>
+
+		<objective type="POIStayWithin">
+			<property name="phase" value="5"/>
+			<property name="radius" value="25"/>
+		</objective>
+		
+		<objective type="ClearSleepers">
+			<property name="phase" value="5"/>
+		</objective>
+
+		<objective type="FetchFromContainer">
+			<property name="phase" value="5"/>
+			<property name="quest_item_ID" value="1"/>
+			<property name="item_count" value="1"/>
+			<property name="default_container" value=""/><!--insertcratehere-->
+		</objective>
+
+		<objective type="POIStayWithin">
+			<property name="phase" value="5"/>
+			<property name="radius" value="25"/>
+		</objective>
+
+		<objective type="ReturnToNPC">
+			<property name="phase" value="6"/>
+		</objective>
+
+		<objective type="InteractWithNPC">
+			<property name="phase" value="6"/>
+		</objective>
+
+		<reward type="Exp" value="27000"/>
+		<reward type="Item" id="casinoCoin" value="8000"/>
+
+		<reward type="LootItem" id="groupQuestMelee,groupQuestRanged" ischosen="true" isfixed="true" value="6"/>
+		<reward type="LootItem" id="groupQuestArmor,groupQuestMedical" ischosen="true" isfixed="true" value="6"/>  <!--insertquestitemhere-->
+		<reward type="LootItem" id="groupQuestAmmo" ischosen="true" value="6"/>
+		<reward type="LootItem" id="groupQuestTools" ischosen="true" value="6"/>
+		<reward type="LootItem" id="groupQuestSchematics" ischosen="true" value="6"/>
+		<reward type="LootItem" id="groupQuestMods" ischosen="true" value="6"/>
+	</quest>
+
+
+
+
+
+	</append>
+</configs>

@@ -1,0 +1,447 @@
+<configs>
+	<append xpath="/item_modifiers">
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<item_modifier name="[Legendary Modifier] +1 Looting" installable_tags="armor" modifier_tags="LootBonus" type="attachment">
+		<property name="CustomIcon" value="modGunMeleeBlessedMetal"/> <property name="CustomIconTint" value="ffff00"/>
+		<property name="Stacknumber" value="1"/> <property name="Group" value="Mods"/>
+		<property name="DropMeshfile" value="#Other/Items?Misc/sack_droppedPrefab.prefab"/>
+		
+		<!--Good luck charm-->
+		<effect_group tiered="false">
+			<passive_effect name="LootGamestage" operation="base_add" value="1"/>
+			
+		</effect_group>
+	</item_modifier>
+	
+		
+	
+	<item_modifier name="[Legendary Modifier] +2 Looting" installable_tags="armor" modifier_tags="LootBonus" type="attachment">
+		<property name="CustomIcon" value="modGunMeleeBlessedMetal"/> <property name="CustomIconTint" value="ffff00"/>
+		<property name="Stacknumber" value="1"/> <property name="Group" value="Mods"/>
+		<property name="DropMeshfile" value="#Other/Items?Misc/sack_droppedPrefab.prefab"/>
+		
+		<!--Good luck charm-->
+		<effect_group tiered="false">
+			<passive_effect name="LootGamestage" operation="base_add" value="2"/>
+			
+		</effect_group>
+	</item_modifier>
+	
+		
+		
+	
+	<item_modifier name="[Legendary Modifier] +3 Looting" installable_tags="armor" modifier_tags="LootBonus" type="attachment">
+		<property name="CustomIcon" value="modGunMeleeBlessedMetal"/> <property name="CustomIconTint" value="ffff00"/>
+		<property name="Stacknumber" value="1"/> <property name="Group" value="Mods"/>
+		<property name="DropMeshfile" value="#Other/Items?Misc/sack_droppedPrefab.prefab"/>
+		
+		<!--Good luck charm-->
+		<effect_group tiered="false">
+			<passive_effect name="LootGamestage" operation="base_add" value="3"/>
+			
+		</effect_group>
+	</item_modifier>
+	
+		
+		
+	
+		
+	
+	
+	
+			
+	<item_modifier name="[Legendary Modifier] +1 Bartering" installable_tags="armor" modifier_tags="BarterBonus" type="attachment">
+		<property name="CustomIcon" value="modGunMeleeBlessedMetal"/> <property name="CustomIconTint" value="fff000"/>
+		<property name="Stacknumber" value="1"/> <property name="Group" value="Mods"/>
+		<property name="DropMeshfile" value="#Other/Items?Misc/sack_droppedPrefab.prefab"/>
+		
+		<!--Good luck charm-->
+		<effect_group tiered="false">
+			<passive_effect name="BarteringBuying" operation="base_add" value=".01"/>
+			<passive_effect name="BarteringSelling" operation="base_add" value=".01"/>
+		</effect_group>
+	</item_modifier>
+	
+	
+	
+				
+	<item_modifier name="[Legendary Modifier] +2 Bartering" installable_tags="armor" modifier_tags="BarterBonus" type="attachment">
+		<property name="CustomIcon" value="modGunMeleeBlessedMetal"/> <property name="CustomIconTint" value="fff000"/>
+		<property name="Stacknumber" value="1"/> <property name="Group" value="Mods"/>
+		<property name="DropMeshfile" value="#Other/Items?Misc/sack_droppedPrefab.prefab"/>
+		
+		<!--Good luck charm-->
+		<effect_group tiered="false">
+			<passive_effect name="BarteringBuying" operation="base_add" value=".02"/>
+			<passive_effect name="BarteringSelling" operation="base_add" value=".02"/>
+		</effect_group>
+	</item_modifier>
+	
+	
+	
+				
+	<item_modifier name="[Legendary Modifier] +3 Bartering" installable_tags="armor" modifier_tags="BarterBonus" type="attachment">
+		<property name="CustomIcon" value="modGunMeleeBlessedMetal"/> <property name="CustomIconTint" value="fff000"/>
+		<property name="Stacknumber" value="1"/> <property name="Group" value="Mods"/>
+		<property name="DropMeshfile" value="#Other/Items?Misc/sack_droppedPrefab.prefab"/>
+		
+		<!--Good luck charm-->
+		<effect_group tiered="false">
+			<passive_effect name="BarteringBuying" operation="base_add" value=".03"/>
+			<passive_effect name="BarteringSelling" operation="base_add" value=".03"/>
+		</effect_group>
+	</item_modifier>
+	
+	
+	
+	
+		
+		
+				
+	<item_modifier name="[Legendary Modifier] +10% to one shot any ore" installable_tags="perkMiner69r" modifier_tags="MiningBonus" type="attachment">
+		<property name="CustomIcon" value="modGunMeleeBlessedMetal"/> <property name="CustomIconTint" value="01a0f0"/>
+		<property name="Stacknumber" value="1"/> <property name="Group" value="Mods"/>
+		<property name="DropMeshfile" value="#Other/Items?Misc/sack_droppedPrefab.prefab"/>
+		
+		<!--Good luck charm-->
+		<effect_group>
+			<passive_effect name="BlockDamage" operation="base_add" value="10000" tags="ore">
+
+				<requirement name="RandomRoll" seed_type="Random" min_max="0,100" operation="LTE" value="10"/>
+			</passive_effect>
+		</effect_group>
+	</item_modifier>
+	
+	
+		
+				
+	<item_modifier name="[Legendary Modifier] +20% to one shot any ore" installable_tags="perkMiner69r" modifier_tags="MiningBonus" type="attachment">
+		<property name="CustomIcon" value="modGunMeleeBlessedMetal"/> <property name="CustomIconTint" value="06afa0"/>
+		<property name="Stacknumber" value="1"/> <property name="Group" value="Mods"/>
+		<property name="DropMeshfile" value="#Other/Items?Misc/sack_droppedPrefab.prefab"/>
+		
+		<!--Good luck charm-->
+		<effect_group>
+			<passive_effect name="BlockDamage" operation="base_add" value="10000" tags="ore">
+
+				<requirement name="RandomRoll" seed_type="Random" min_max="0,100" operation="LTE" value="20"/>
+			</passive_effect>
+		</effect_group>
+	</item_modifier>
+	
+	
+		
+				
+	<item_modifier name="[Legendary Modifier] +30% to one shot any ore" installable_tags="perkMiner69r" modifier_tags="MiningBonus" type="attachment">
+		<property name="CustomIcon" value="modGunMeleeBlessedMetal"/> <property name="CustomIconTint" value="1af00f"/>
+		<property name="Stacknumber" value="1"/> <property name="Group" value="Mods"/>
+		<property name="DropMeshfile" value="#Other/Items?Misc/sack_droppedPrefab.prefab"/>
+		
+		<!--Good luck charm-->
+		<effect_group>
+			<passive_effect name="BlockDamage" operation="base_add" value="10000" tags="ore">
+
+				<requirement name="RandomRoll" seed_type="Random" min_max="0,100" operation="LTE" value="30"/>
+			</passive_effect>
+		</effect_group>
+	</item_modifier>
+	
+	
+	
+	
+			
+	<!-- modArmorPlatingSteel -->
+	<item_modifier name="[Legendary Modifier] +3 armor plating" installable_tags="armor" modifier_tags="resistance" type="attachment">
+		<property name="CustomIcon" value="modArmorPlatingReinforced"/> <property name="CustomIconTint" value="1af00f"/>
+		<property name="DisplayType" value="modArmor"/>
+		<property name="Stacknumber" value="1"/> <property name="Group" value="Mods"/>
+		<property name="DropMeshfile" value="#Other/Items?Misc/sack_droppedPrefab.prefab"/>
+		<property name="DescriptionKey" value="modArmorPlatingBasicDesc"/>
+		<effect_group tiered="false">
+			<passive_effect name="PhysicalDamageResist" operation="base_add" value="3"/>
+		</effect_group>
+	</item_modifier>	
+		
+	
+		
+	
+	
+		
+			
+	<item_modifier name="[Legendary Modifier] -2% Crafting Time Reduction" installable_tags="armor" modifier_tags="CraftingBonus" type="attachment">
+		<property name="CustomIcon" value="resourceRawDiamond"/> <property name="CustomIconTint" value="18f08f"/>
+		<property name="DisplayType" value="modArmor"/>
+		<property name="Stacknumber" value="1"/> <property name="Group" value="Mods"/>
+		<property name="DropMeshfile" value="#Other/Items?Misc/sack_droppedPrefab.prefab"/>
+		<property name="DescriptionKey" value="modArmorPlatingBasicDesc"/>
+		<effect_group tiered="false">
+					<passive_effect name="CraftingTime" operation="perc_add" value="-.02"/>
+		</effect_group>
+	</item_modifier>	
+		
+	
+
+		
+	<item_modifier name="[Legendary Modifier] -3% Crafting Time Reduction" installable_tags="armor" modifier_tags="CraftingBonus" type="attachment">
+		<property name="CustomIcon" value="resourceRawDiamond"/> <property name="CustomIconTint" value="7af3ff"/>
+		<property name="DisplayType" value="modArmor"/>
+		<property name="Stacknumber" value="1"/> <property name="Group" value="Mods"/>
+		<property name="DropMeshfile" value="#Other/Items?Misc/sack_droppedPrefab.prefab"/>
+		<property name="DescriptionKey" value="modArmorPlatingBasicDesc"/>
+		<effect_group tiered="false">
+					<passive_effect name="CraftingTime" operation="perc_add" value="-.03"/>
+		</effect_group>
+	</item_modifier>	
+		
+	
+
+			
+	<item_modifier name="[Legendary Modifier] food effect lasts longer" installable_tags="armor" modifier_tags="CraftingBonus" type="attachment">
+		<property name="CustomIcon" value="resourceRawDiamond"/> <property name="CustomIconTint" value="7af3ff"/>
+		<property name="DisplayType" value="modArmor"/>
+		<property name="Stacknumber" value="1"/> <property name="Group" value="Mods"/>
+		<property name="DropMeshfile" value="#Other/Items?Misc/sack_droppedPrefab.prefab"/>
+		<property name="DescriptionKey" value="modArmorPlatingBasicDesc"/>
+		<effect_group tiered="false">
+			<!--  Attempt failed -->
+		</effect_group>
+	</item_modifier>	
+	
+	
+		
+
+		
+	<!-- T2 -->
+	<item_modifier name="[Legendary Modifier] +12 To Stealth" installable_tags="armor" modifier_tags="stealth" type="attachment">
+		<property name="CustomIcon" value="modArmorMuffledConnectors"/> <property name="CustomIconTint" value="0af3ff"/>
+		<property name="DisplayType" value="modNoiseReduction"/>
+		<property name="Material" value="Msteel"/>
+		<property name="Stacknumber" value="1"/> <property name="Group" value="Mods"/>
+		<property name="DropMeshfile" value="#Other/Items?Misc/sack_droppedPrefab.prefab"/>
+
+		<effect_group tiered="false">
+			<passive_effect name="NoiseMultiplier" operation="perc_add" value="-.12"/><display_value name="dNoiseMultiplier" value="-.12"/>
+		</effect_group>
+	</item_modifier>
+	
+	
+	
+				
+	<item_modifier name="[Legendary Modifier] +1 Jump Strength" installable_tags="armorFeet" modifier_tags="JumpBonus" type="attachment">
+		<property name="CustomIcon" value="modArmorImpactBracing"/> <property name="CustomIconTint" value="7af3ff"/>
+		
+		<property name="Material" value="Msteel"/>
+		<property name="Stacknumber" value="1"/> <property name="Group" value="Mods"/>
+		<property name="DropMeshfile" value="#Other/Items?Misc/sack_droppedPrefab.prefab"/>
+
+		<effect_group tiered="false">
+				<passive_effect name="JumpStrength" operation="perc_add" value=".1"/>
+		</effect_group>
+	</item_modifier>
+	
+
+				
+	<item_modifier name="[Legendary Modifier] +2 Jump Strength" installable_tags="armorFeet" modifier_tags="JumpBonus" type="attachment">
+		<property name="CustomIcon" value="modArmorImpactBracing"/> <property name="CustomIconTint" value="7af3ff"/>
+		
+		<property name="Material" value="Msteel"/>
+		<property name="Stacknumber" value="1"/> <property name="Group" value="Mods"/>
+		<property name="DropMeshfile" value="#Other/Items?Misc/sack_droppedPrefab.prefab"/>
+
+		<effect_group tiered="false">
+				<passive_effect name="JumpStrength" operation="perc_add" value=".2"/>
+		</effect_group>
+	</item_modifier>
+	
+	
+
+		
+	<item_modifier name="[Legendary Modifier] +3 Jump Strength" installable_tags="armorFeet" modifier_tags="JumpBonus" type="attachment">
+		<property name="CustomIcon" value="modArmorImpactBracing"/> <property name="CustomIconTint" value="7af3ff"/>
+		
+		<property name="Material" value="Msteel"/>
+		<property name="Stacknumber" value="1"/> <property name="Group" value="Mods"/>
+		<property name="DropMeshfile" value="#Other/Items?Misc/sack_droppedPrefab.prefab"/>
+
+		<effect_group tiered="false">
+				<passive_effect name="JumpStrength" operation="perc_add" value=".3"/>
+		</effect_group>
+	</item_modifier>
+	
+
+		<!-- Tier 2 reward -->
+	<item_modifier name="[Legendary Modifier] +4 Custom Fittings" installable_tags="armor" modifier_tags="movement" blocked_tags="padded" type="attachment">
+	<property name="CustomIcon" value="modArmorCustomizedFittings"/> <property name="CustomIconTint" value="7af3ff"/>
+
+		<property name="DisplayType" value="modArmorMobility"/>
+		<property name="Stacknumber" value="1"/> <property name="Group" value="Mods"/>
+		<property name="DropMeshfile" value="#Other/Items?Misc/sack_droppedPrefab.prefab"/>
+
+		<effect_group tiered="false">
+			<passive_effect name="Mobility" operation="perc_add" value="0.04"/>
+			<passive_effect name="StaminaChangeOT" operation="perc_add" value="0.021" tags="walking"/>
+			<passive_effect name="StaminaChangeOT" operation="perc_add" value="0.0562" tags="running"/>
+			<display_value name="dStaminaChangeOT" value="0.0562"/>
+		</effect_group>
+	</item_modifier>
+
+
+
+		<!-- T3 -->
+	<item_modifier name="[Legendary Modifier] +6 Shotgun Barrel Magazinesize" installable_tags="modGunShotgunTubeExtenderMagazine" modifier_tags="magazine" type="attachment">
+		<property name="CustomIcon" value="modGunShotgunTubeExtenderMagazine"/> <property name="CustomIconTint" value="fff000"/>
+		<property name="UnlockedBy" value="bookShotgunMessiahMagazine"/>
+		<property name="Stacknumber" value="1"/> <property name="Group" value="Mods"/>
+		<property name="DropMeshfile" value="#Other/Items?Misc/sack_droppedPrefab.prefab"/>
+		<effect_group tiered="false">
+			<passive_effect name="MagazineSize" operation="perc_add" value=".675"/>
+		</effect_group>
+		<property name="PickupJournalEntry" value="augmentGunsTip"/>
+	</item_modifier>
+
+
+
+
+
+
+
+	<item_modifier name="[Legendary Modifier] Super Wrench of Better Harvest T1" installable_tags="perkSalvageOperations" modifier_tags="health" type="attachment">
+		<property name="CustomIcon" value="meleeToolWrench" />
+		<property name="Stacknumber" value="1"/> <property name="Group" value="Mods"/>
+		<property name="DropMeshfile" value="#Other/Items?Misc/sack_droppedPrefab.prefab"/>
+			<effect_group tiered="false">
+				<passive_effect name="HarvestCount" operation="base_set" value="1" tags="salvageHarvest"/>
+					
+		</effect_group>
+	</item_modifier>
+
+
+
+	<item_modifier name="[Legendary Modifier] Super Wrench of Better Harvest T2" installable_tags="perkSalvageOperations" modifier_tags="health" type="attachment">
+		<property name="CustomIcon" value="meleeToolWrench" />
+		<property name="Stacknumber" value="1"/> <property name="Group" value="Mods"/>
+		<property name="DropMeshfile" value="#Other/Items?Misc/sack_droppedPrefab.prefab"/>
+			<effect_group tiered="false">
+				<passive_effect name="HarvestCount" operation="base_set" value="1.25" tags="salvageHarvest"/>
+		</effect_group>
+	</item_modifier>
+
+
+
+
+
+	<item_modifier name="[Legendary Mobility] 1% Chance For 100% Wrench Harvest" installable_tags="perkSalvageOperations" modifier_tags="health22" type="attachment">
+		<property name="CustomIcon" value="meleeToolWrench" />
+		<property name="Stacknumber" value="1"/> <property name="Group" value="Mods"/>
+		<property name="DropMeshfile" value="#Other/Items?Misc/sack_droppedPrefab.prefab"/>
+		<effect_group tiered="false">
+			<passive_effect name="HarvestCount" operation="base_set" value="5" tags="salvageHarvest">
+				<requirement name="RandomRoll" seed_type="Random" min_max="0,100" operation="LTE" value="1" />
+			</passive_effect>    
+		</effect_group>
+	</item_modifier>
+
+
+	<item_modifier name="[Legendary Mobility] 2% Chance For 100% Wrench Harvest" installable_tags="perkSalvageOperations" modifier_tags="health22" type="attachment">
+		<property name="CustomIcon" value="meleeToolWrench" />
+		<property name="Stacknumber" value="1"/> <property name="Group" value="Mods"/>
+		<property name="DropMeshfile" value="#Other/Items?Misc/sack_droppedPrefab.prefab"/>
+		<effect_group tiered="false">
+			<passive_effect name="HarvestCount" operation="base_set" value="5" tags="salvageHarvest">
+				<requirement name="RandomRoll" seed_type="Random" min_max="0,100" operation="LTE" value="2" />
+			</passive_effect>    
+		</effect_group>
+	</item_modifier>
+
+
+	<item_modifier name="[Legendary Mobility] 3% Chance For 100% Wrench Harvest" installable_tags="perkSalvageOperations" modifier_tags="health22" type="attachment">
+		<property name="CustomIcon" value="meleeToolWrench" />
+		<property name="Stacknumber" value="1"/> <property name="Group" value="Mods"/>
+		<property name="DropMeshfile" value="#Other/Items?Misc/sack_droppedPrefab.prefab"/>
+		<effect_group tiered="false">
+			<passive_effect name="HarvestCount" operation="base_set" value="5" tags="salvageHarvest">
+				<requirement name="RandomRoll" seed_type="Random" min_max="0,100" operation="LTE" value="3" />
+			</passive_effect>    
+		</effect_group>
+	</item_modifier>
+
+
+
+
+
+
+
+	<item_modifier name="[Legendary Mobility] 1% Chance For 100% Animal Harvest" installable_tags="knife" modifier_tags="health" type="attachment">
+		<property name="CustomIcon" value="meleeToolKnifeIron" />
+		<property name="Stacknumber" value="1"/> <property name="Group" value="Mods"/>
+		<property name="DropMeshfile" value="#Other/Items?Misc/sack_droppedPrefab.prefab"/>
+			<effect_group tiered="false">
+			<passive_effect name="HarvestCount" operation="base_set" value="5" tags="butcherHarvest">
+				<requirement name="RandomRoll" seed_type="Random" min_max="0,100" operation="LTE" value="1" />
+			</passive_effect>	
+		</effect_group>
+	</item_modifier>
+
+
+
+
+
+	<item_modifier name="[Legendary Mobility] 2% Chance For 100% Animal Harvest" installable_tags="knife" modifier_tags="health" type="attachment">
+		<property name="CustomIcon" value="meleeToolKnifeIron" />
+		<property name="Stacknumber" value="1"/> <property name="Group" value="Mods"/>
+		<property name="DropMeshfile" value="#Other/Items?Misc/sack_droppedPrefab.prefab"/>
+			<effect_group tiered="false">
+			<passive_effect name="HarvestCount" operation="base_set" value="5" tags="butcherHarvest">
+				<requirement name="RandomRoll" seed_type="Random" min_max="0,100" operation="LTE" value="2" />
+			</passive_effect>	
+		</effect_group>
+	</item_modifier>
+
+
+
+
+
+	<item_modifier name="[Legendary Mobility] 3% Chance For 100% Animal Harvest" installable_tags="knife" modifier_tags="health" type="attachment">
+		<property name="CustomIcon" value="meleeToolKnifeIron" />
+		<property name="Stacknumber" value="1"/> <property name="Group" value="Mods"/>
+		<property name="DropMeshfile" value="#Other/Items?Misc/sack_droppedPrefab.prefab"/>
+			<effect_group tiered="false">
+			<passive_effect name="HarvestCount" operation="base_set" value="5" tags="butcherHarvest">
+				<requirement name="RandomRoll" seed_type="Random" min_max="0,100" operation="LTE" value="3" />
+			</passive_effect>	
+		</effect_group>
+	</item_modifier>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	
+	
+	
+	
+	</append>
+</configs>

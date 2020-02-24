@@ -1,0 +1,37 @@
+<MoreZombiesBiomex16>
+
+
+<append xpath="/gamestages">
+
+
+	<group name="S_-_Group_Giant_Minions" emptyChance="0" decoyChance="0" decoy1hpChance="0">
+		 <spawner name="SpawnGiantsMinions T1" count="1"/>
+    </group>
+	
+		<group name="S_-_Group_Giant_Boss" emptyChance="0" decoyChance="0" decoy1hpChance="0">
+		 <spawner name="SpawnGiantsBoss T1" count="1"/>
+    </group>
+    
+    
+	<spawner name="SpawnGiantsBoss T1">
+		<gamestage stage="1"><spawn group="BossQuestGiantsSeperatedJustTheBoss T1" num="1" maxAlive="1" duration="1"/></gamestage>
+		<gamestage stage="50"><spawn group="BossQuestGiantsSeperatedJustTheBoss T1" num="1" maxAlive="1" duration="1"/></gamestage>
+		<gamestage stage="100"><spawn group="BossQuestGiantsSeperatedJustTheBoss T1" num="1" maxAlive="1" duration="1"/></gamestage>
+		<gamestage stage="200"><spawn group="BossQuestGiantsSeperatedJustTheBoss T1" num="1" maxAlive="1" duration="1"/></gamestage>
+		<gamestage stage="400"><spawn group="BossQuestGiantsSeperatedJustTheBoss T1" num="1" maxAlive="1" duration="1"/></gamestage>
+		<gamestage stage="800"><spawn group="BossQuestGiantsSeperatedJustTheBoss T1" num="1" maxAlive="1" duration="1"/></gamestage>
+	</spawner>
+    
+    	<spawner name="SpawnGiantsMinions T1">
+		<gamestage stage="1"><spawn group="BossQuestGiantsSeperatedJustTheMinions T1" num="5" maxAlive="5" duration="1"/></gamestage>
+		<gamestage stage="50"><spawn group="BossQuestGiantsSeperatedJustTheMinions T1" num="10" maxAlive="10" duration="1"/></gamestage>
+		<gamestage stage="100"><spawn group="BossQuestGiantsSeperatedJustTheMinions T1" num="15" maxAlive="15" duration="1"/></gamestage>
+		<gamestage stage="200"><spawn group="BossQuestGiantsSeperatedJustTheMinions T1" num="20" maxAlive="20" duration="1"/></gamestage>
+		<gamestage stage="400"><spawn group="BossQuestGiantsSeperatedJustTheMinions T1" num="25" maxAlive="25" duration="1"/></gamestage>
+		<gamestage stage="800"><spawn group="BossQuestGiantsSeperatedJustTheMinions T1" num="30" maxAlive="30" duration="1"/></gamestage>
+	</spawner>
+    
+</append>
+    
+   
+</MoreZombiesBiomex16>

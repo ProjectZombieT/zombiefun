@@ -1,0 +1,92 @@
+<configs>
+<append xpath="/blocks">
+
+<block name="chestroomdoorv1">
+	<property name="Class" value="DoorSecure"/>
+	<property name="Material" value="Mbedrock"/>
+	<property name="LightOpacity" value="1"/>
+	<property name="Shape" value="ModelEntity"/>
+	<property name="Tags" value="door"/>
+	<property name="BlockTag" value="Door"/>
+	<property name="Place" value="Door"/> <!-- build restriction -->
+	<property name="PlaceEverywhere" value="true"/>
+	<property name="AllowAllRotations" value="true"/> <!-- enables the 45 degree rotations -->
+	<property name="Model" value="Entities/Doors/wooden_door_v1Prefab"/>
+	<property name="ModelOffset" value="0,0,0"/>
+	<property name="ImposterExchange" value="imposterBlock" param1="35"/>
+	<property name="Mesh-Damage-1" value="Door/Door_DMG0"/>
+	<property name="Mesh-Damage-2" value="Door/Door_DMG1"/>
+	<property name="Mesh-Damage-3" value="Door/Door_DMG2"/>
+	<property name="Mesh-Damage-4" value="Door/Door_DMG3"/>
+	<property name="Mesh-Damage-5" value="Door/Door_DMG4"/>
+	<property name="OpenSound" value="open_door_wood"/>
+	<property name="CloseSound" value="close_door_wood"/>
+	<property class="RepairItems"> <property name="resourceWood" value="3"/> </property>
+	<property class="UpgradeBlock">
+		<property name="ToBlock" value="chestroomdoorv1invis"/>
+		<property name="Item" value="resourceWood"/>
+		<property name="ItemCount" value="4"/>
+		<property name="UpgradeHitCount" value="4"/>
+	</property>
+	<property name="CustomUpgradeSound" value="place_block_wood"/>
+	<property name="Group" value="Building,advBuilding"/>
+	<property name="EconomicValue" value="5"/>
+	<property name="EconomicBundleSize" value="10"/>
+	<property name="FilterTags" value="fdecor,fdoors"/>
+	<property name="SortOrder1" value="7060"/>
+	<property name="SortOrder2" value="0100"/> <!-- SortDoors -->
+</block>
+
+<block name="chestroomdoorv1invis">
+	<property name="Class" value="PlantGrowing"/>
+	<property name="Material" value="Mair"/>
+	<property name="LightOpacity" value="1"/>
+	<property name="Shape" value="Invisible"/>
+	<property name="PlantGrowing.FertileLevel" value="0"/>
+	<property name="PlantGrowing.Next" value="chestroomdoorv1"/>
+	<property name="PlantGrowing.GrowthRate" value="0"/>
+	<property name="PlantGrowing.IsRandom" value="false"/>
+	<property name="Tags" value="door"/>
+	<property name="BlockTag" value="Door"/>
+	<property name="Place" value="Door"/> <!-- build restriction -->
+	<property name="PlaceEverywhere" value="true"/>
+	<property name="AllowAllRotations" value="true"/> <!-- enables the 45 degree rotations -->
+	<property name="Model" value="Entities/Doors/wooden_door_v1Prefab"/>
+	<property name="ModelOffset" value="0,0,0"/>
+	<property name="ImposterExchange" value="imposterBlock" param1="35"/>
+	<property name="Mesh-Damage-1" value="Door/Door_DMG0"/>
+	<property name="Mesh-Damage-2" value="Door/Door_DMG1"/>
+	<property name="Mesh-Damage-3" value="Door/Door_DMG2"/>
+	<property name="Mesh-Damage-4" value="Door/Door_DMG3"/>
+	<property name="Mesh-Damage-5" value="Door/Door_DMG4"/>
+	<property name="OpenSound" value="open_door_wood"/>
+	<property name="CloseSound" value="close_door_wood"/>
+	<property class="RepairItems"> <property name="resourceWood" value="3"/> </property>
+	<property name="CustomUpgradeSound" value="place_block_wood"/>
+	<drop event="Destroy" count="0"/>
+	<drop event="Fall" name="terrDestroyedWoodDebris" count="1" prob="0.75" stick_chance="1"/>
+	<property name="Group" value="Building,advBuilding"/>
+	<property name="EconomicValue" value="5"/>
+	<property name="EconomicBundleSize" value="10"/>
+	<property name="FilterTags" value="fdecor,fdoors"/>
+	<property name="SortOrder1" value="7060"/>
+	<property name="SortOrder2" value="0100"/> <!-- SortDoors -->
+</block>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</append>
+</configs>

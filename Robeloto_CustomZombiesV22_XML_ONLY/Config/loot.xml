@@ -1,0 +1,268 @@
+<configs>
+	<append xpath="/lootcontainers/lootgroup">
+
+		<lootgroup name="schematicsModsRare">
+		<item name="drugAntibioticsAmoxilSchematic"/>
+		</lootgroup>
+
+		<lootgroup name="rareMedicine">
+		<item name="drugAntibioticsAmoxil" count="1,2" prob="0.03"/>
+		</lootgroup>
+
+
+		<lootgroup name="airdropMedicine">
+		<item name="drugAntibioticsAmoxil" count="1,2" prob="0.06"/>
+		</lootgroup>
+
+		<lootgroup name="labEquipment">
+		<item name="drugAntibioticsAmoxil" prob="0.1"/>
+		</lootgroup>
+
+		<lootgroup name="groupQuestMedical">
+			<item name="drugAntibioticsAmoxil" count="1,2" prob="0.2"/>
+		</lootgroup>
+		
+
+
+
+		
+</append>
+
+
+<!-- =================== Careful, append ends here =================== -->
+
+	
+	
+	
+	<!-- the 'count' is the amount of items that will appear in the reward quest max. You want 1 because you should only get 1 legendary quest -->
+	
+	<append xpath="/lootcontainers">
+	
+	
+		<lootgroup name="zmkquests" >
+<!-- 		
+			<item name="Legendary Quest: A Giant Problem" prob="100"/>
+			<item name="Legendary Quest: A bigger Giant Problem" prob="100"/>
+			<item name="Legendary Quest: A Truly Giant Problem" prob="100"/>
+			<item name="Legendary Quest: Sickness problem T1" prob="100"/>
+			<item name="Legendary Quest: Sickness problem T2" prob="100"/>
+			<item name="Legendary Quest: Sickness problem T3" prob="100"/>
+			<item name="Legendary Quest: A Greater Sickness problem T1" prob="100"/>
+			<item name="Legendary Quest: A Greater Sickness problem T2" prob="100"/>
+			<item name="Legendary Quest: A Greater Sickness problem T3" prob="100"/>
+			<item name="Legendary Quest: Heating Issues T1" prob="100"/>
+			<item name="Legendary Quest: Heating Issues T2" prob="100"/>
+			<item name="Legendary Quest: Heating Issues T3" prob="100"/>
+			<item name="Legendary Quest: Loud Issues T1" prob="100"/>
+			<item name="Legendary Quest: Loud Issues T2" prob="100"/>
+			<item name="Legendary Quest: Loud Issues T3" prob="100"/>
+			<item name="Legendary Quest: puking problem T1" prob="100"/>
+			<item name="Legendary Quest: puking problem T2" prob="100"/>
+			<item name="Legendary Quest: puking problem T3" prob="100"/>
+			<item name="Legendary Quest: Electrical problem T1" prob="100"/>
+			<item name="Legendary Quest: Electrical problem T2" prob="100"/>
+			<item name="Legendary Quest: Electrical problem T3" prob="100"/>
+			<item name="Legendary Quest: Taking Cover T1" prob="100"/>
+			<item name="Legendary Quest: Taking Cover T2" prob="100"/>
+			<item name="Legendary Quest: Taking Cover T3" prob="100"/>
+			<item name="Legendary Quest: Ignus Magnus T1" prob="100"/>
+			<item name="Legendary Quest: Ignus Magnus T2" prob="100"/>
+			<item name="Legendary Quest: Ignus Magnus T3" prob="100"/>
+			<item name="Legendary Quest: Drinking problem T1" prob="100"/>
+			<item name="Legendary Quest: Drinking problem T2" prob="100"/>
+			<item name="Legendary Quest: Drinking problem T3" prob="100"/>
+			<item name="Legendary Quest: Mummy problem T1" prob="100"/>
+			<item name="Legendary Quest: Mummy problem T2" prob="100"/>
+			<item name="Legendary Quest: Mummy problem T3" prob="100"/>
+		 -->
+		</lootgroup>
+		
+		
+		
+		
+		<lootgroup name="zmkresourcesbolter" count="1">
+			<item name="Enderium" count="1,50" prob="100"/>
+		</lootgroup>
+		
+		
+		<lootgroup name="zmkresources" count="1">
+			<item name="Enderium" count="1,200" prob="100"/>
+		</lootgroup>
+		
+		<lootgroup name="zmklegendaryT1" count="1">
+		
+			<item name="[Legendary Modifier] +1 Looting" prob=".5" count="1,1"/>
+			<item name="[Legendary Modifier] +1 Bartering" prob=".5" count="1,1"/>
+			<item name="[Legendary Modifier] +10% to one shot any ore" prob=".5" count="1,1"/>
+			<item name="[Legendary Modifier] +1 Jump Strength" prob=".5" count="1,1"/>
+			<item name="[Legendary Mobility] 1% Chance For 100% Wrench Harvest" prob=".5" count="1,1"/>
+			<item name="[Legendary Mobility] 1% Chance For 100% Animal Harvest" prob=".5" count="1,1"/>
+			<item name="[Legendary Modifier] +12 To Stealth" prob=".5" count="1,1"/>
+			
+			
+		</lootgroup>
+				
+		<lootgroup name="zmklegendaryT2" count="1">
+		
+			<item name="[Legendary Modifier] +2 Looting" prob=".5" count="1,1"/>
+			<item name="[Legendary Modifier] +2 Bartering" prob=".5" count="1,1"/>
+			<item name="[Legendary Modifier] +20% to one shot any ore" prob=".5" count="1,1"/>
+			<item name="[Legendary Modifier] -2% Crafting Time Reduction" prob=".5" count="1,1"/>
+			<item name="[Legendary Modifier] +2 Jump Strength" prob=".5" count="1,1"/>
+			<item name="[Legendary Modifier] Super Wrench of Better Harvest T1" prob=".5" count="1,1"/>
+			<item name="[Legendary Mobility] 2% Chance For 100% Wrench Harvest" prob=".5" count="1,1"/>
+			<item name="[Legendary Mobility] 2% Chance For 100% Animal Harvest" prob=".5" count="1,1"/>
+			<item name="[Legendary Modifier] +6 Shotgun Barrel Magazinesize" prob=".5" count="1,1"/>
+			<item name="[Legendary Modifier] +3 armor plating" prob=".5" count="1,1"/>
+
+			
+		</lootgroup>
+		
+		
+		
+		
+		<lootgroup name="zmklegendaryT3" count="1"> <!-- The count overrides everything else. if set to 'all' then everything gets in. So set to 1 to get only 1 within the group -->
+			<item name="Super Auger Parts" prob=".5" count="1,1"/>
+			<item name="Super Auger Handlebars" prob=".5" count="1,1"/>
+			<item name="Super Auger Engine" prob=".5" count="1,1"/>
+			
+			<item name="[Legendary Modifier] +3 Looting" prob=".5" count="1,1"/>
+			<item name="[Legendary Modifier] +3 Bartering" prob=".5" count="1,1"/>
+			<item name="[Legendary Modifier] +30% to one shot any ore" prob=".5" count="1,1"/>
+			<item name="[Legendary Modifier] -3% Crafting Time Reduction" prob=".5" count="1,1"/>
+			<item name="[Legendary Modifier] +3 Jump Strength" prob=".5" count="1,1"/>
+
+			<item name="[Legendary Modifier] Super Wrench of Better Harvest T2" prob=".5" count="1,1"/>
+			<item name="[Legendary Mobility] 3% Chance For 100% Wrench Harvest" prob=".5" count="1,1"/>
+			<item name="[Legendary Mobility] 3% Chance For 100% Animal Harvest" prob=".5" count="1,1"/>
+		</lootgroup>
+		
+
+
+
+
+	
+	
+		<lootcontainer id="785" count="1" size="5,5" destroy_on_close="false" sound_open="UseActions/open_backpack" sound_close="UseActions/close_backpack" open_time="0.2" >
+			<item group="zmkresourcesbolter" count="1" prob="100"/>
+		</lootcontainer>
+	
+		
+		<lootcontainer id="786" count="1" size="5,5" destroy_on_close="false" sound_open="UseActions/open_backpack" sound_close="UseActions/close_backpack" open_time="0.2" >
+			<item group="zmkquests" count="1" prob="100"/>
+		</lootcontainer>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+			<!-- Legendary zombie quest reward items -->
+		<lootcontainer id="787" count="10" size="10,10" destroy_on_close="false" sound_open="player1drowndeath" sound_close="UseActions/open_apache_artifact_chest" open_time="0.2" >
+			<item group="rareOres" count="30" prob="100"/>
+			<item group="electricalDevices" count="5" prob="100"/>
+			<item group="workbenchLoot" count="10" prob="100"/>
+			<item group="medicine" count="10" prob="100"/>
+			<item group="zmkresources" count="1" prob="100"/>
+			<item group="labEquipment" count="5" prob="100"/>
+		</lootcontainer>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+			<!-- Legendary Loot Tier 1 -->
+		<lootcontainer id="800" count="1" size="6,3" destroy_on_close="false" sound_open="UseActions/open_apache_artifact_chest" sound_close="UseActions/open_apache_artifact_chest" open_time="1" loot_quality_template="qualPlus1Template">
+
+			
+			<item group="rareOres" count="30" prob="100"/>
+			<item group="electricalDevices" count="5" prob="100"/>
+			<item group="workbenchLoot" count="10" prob="100"/>
+			<item group="medicine" count="10" prob="100"/>
+			<item group="zmkresources" count="1" prob="100"/>
+			<item group="labEquipment" count="5" prob="100"/>
+		
+
+
+		</lootcontainer>
+		
+	
+	
+	
+	
+	
+	
+	
+	
+			<!-- Legendary Loot Tier 2 -->
+		<lootcontainer id="801" count="1" size="12,11" destroy_on_close="false" sound_open="UseActions/open_apache_artifact_chest" sound_close="UseActions/open_apache_artifact_chest" open_time="1" loot_quality_template="qualPlus1Template">
+
+			
+			<item group="rareOres" count="30" prob="100"/>
+			<item group="electricalDevices" count="5" prob="100"/>
+			<item group="workbenchLoot" count="10" prob="100"/>
+			<item group="medicine" count="10" prob="100"/>
+			<item group="zmkresources" count="1" prob="100"/>
+			<item group="labEquipment" count="5" prob="100"/>
+
+
+
+		</lootcontainer>
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			<!-- Removing count at the lootcontainer level forces it to be only 1 item -->
+			<!-- Legendary Loot Tier 3 -->
+		<lootcontainer id="802" count="10" size="10,10" destroy_on_close="false" sound_open="player1drowndeath" sound_close="UseActions/open_apache_artifact_chest" open_time="0.2" >
+
+			
+			<item group="rareOres" count="30" prob="100"/>
+			<item group="electricalDevices" count="5" prob="100"/>
+			<item group="workbenchLoot" count="10" prob="100"/>
+			<item group="medicine" count="10" prob="100"/>
+			<item group="zmkresources" count="1" prob="100"/>
+			<item group="labEquipment" count="5" prob="100"/>
+
+
+		</lootcontainer>
+		
+			
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	</append>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+</configs>
