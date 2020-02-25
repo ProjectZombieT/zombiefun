@@ -1753,7 +1753,7 @@ HEY Nick: Few things needed:
 			<property name="phase" value="3"/>
 			<property name="quest_item_ID" value="1"/>
 			<property name="item_count" value="1"/>
-			<property name="default_container" value=""/>  <!--insertcratehere-->
+			<property name="default_container" value="Bosschestleft"/>  <!--insertcratehere-->
 		</objective>
 
 		<objective type="POIStayWithin">
@@ -1770,7 +1770,7 @@ HEY Nick: Few things needed:
 			<property name="phase" value="4"/>
 			<property name="quest_item_ID" value="1"/>
 			<property name="item_count" value="1"/>
-			<property name="default_container" value=""/><!--insertcratehere-->
+			<property name="default_container" value="Bosschestright"/><!--insertcratehere-->
 		</objective>
 
 		<objective type="POIStayWithin">
@@ -1786,7 +1786,7 @@ HEY Nick: Few things needed:
 			<property name="phase" value="5"/>
 			<property name="quest_item_ID" value="1"/>
 			<property name="item_count" value="1"/>
-			<property name="default_container" value=""/><!--insertcratehere-->
+			<property name="default_container" value="EntityLootContainerSpecialInfectedBoss"/><!--insertcratehere-->
 		</objective>
 
 		<objective type="POIStayWithin">
@@ -1811,6 +1811,61 @@ HEY Nick: Few things needed:
 		<reward type="LootItem" id="groupQuestTools" ischosen="true" value="6"/>
 		<reward type="LootItem" id="groupQuestSchematics" ischosen="true" value="6"/>
 		<reward type="LootItem" id="groupQuestMods" ischosen="true" value="6"/>
+	</quest>
+	
+	
+	
+	<quest id="tier10_clear">
+		<property name="name_key" value="quest_tier10_clear"/>
+		<property name="subtitle_key" value="quest_clear_subtitle"/>
+		<property name="description_key" value="quest_clear_description"/>
+		<property name="icon" value="ui_game_symbol_quest"/>
+		<property name="repeatable" value="true"/>
+		<property name="category_key" value="quest"/>
+		<property name="offer_key" value="quest_tier6_clear_offer"/>
+		<property name="difficulty" value="medium"/>
+		<property name="difficulty_tier" value="10"/>
+		<property name="statement_key" value="quest_clear_statement"/>
+		<property name="response_key" value="quest_clear_response"/>
+		<property name="login_rally_reset" value="true"/>
+
+		<property name="completiontype" value="TurnIn"/>
+		<property name="completion_key" value="quest_clear_completion"/>
+
+		<objective type="RandomPOIGoto">
+			<property name="phase" value="1"/>
+		</objective>
+
+		<objective type="RallyPoint">
+			<property name="phase" value="2"/>
+		</objective>
+
+		<objective type="ClearSleepers">
+			<property name="phase" value="3"/>
+		</objective>
+
+		<objective type="POIStayWithin">
+			<property name="phase" value="3"/>
+			<property name="radius" value="25"/>
+		</objective>
+
+		<objective type="ReturnToNPC">
+			<property name="phase" value="4"/>
+		</objective>
+
+		<objective type="InteractWithNPC">
+			<property name="phase" value="4"/>
+		</objective>
+
+		<reward type="Exp" value="15000"/>
+		<reward type="Item" id="casinoCoin" value="4080"/>
+
+		<reward type="LootItem" id="groupQuestMelee,groupQuestRanged" ischosen="true" isfixed="true" value="7"/>
+		<reward type="LootItem" id="groupQuestArmor,groupQuestMedical" ischosen="true" isfixed="true" value="7"/>
+		<reward type="LootItem" id="groupQuestAmmo" ischosen="true" value="7"/>
+		<reward type="LootItem" id="groupQuestTools" ischosen="true" value="7"/>
+		<reward type="LootItem" id="groupQuestSchematics" ischosen="true" value="7"/>
+		<reward type="LootItem" id="groupQuestMods" ischosen="true" value="7"/>
 	</quest>
 
 

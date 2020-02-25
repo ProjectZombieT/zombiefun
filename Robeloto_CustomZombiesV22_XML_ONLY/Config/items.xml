@@ -18,37 +18,30 @@
 	<property name="Group" value="Science,CFChemicals,Medical"/>	
 </item>
 
-<item name="MasterKeyroom1"> <!-- scrap material -->
+<item name="resourceKey">
 	<property name="HoldType" value="45"/>
 	<property name="Meshfile" value="#Other/Items?Misc/sackPrefab.prefab"/>
 	<property name="DropMeshfile" value="#Other/Items?Misc/sack_droppedPrefab.prefab"/>
-	<property name="Material" value="MresourceWood"/>
-	<property name="Weight" value="5"/>
+	<property name="Material" value="MresourceScrapIron"/>
+	<property name="Weight" value="1"/>
 	<property name="Stacknumber" value="6000"/> <!-- STK resource -->
-	<property name="FuelValue" value="50"/>
-	<property name="EconomicValue" value="25"/>
-	<property name="EconomicBundleSize" value="50"/>
+	<property name="EconomicValue" value="10"/>
+	<property name="EconomicBundleSize" value="10"/>
 	<property name="Group" value="Resources"/>
-	<property name="RepairAmount" value="100"/>
-	<property name="LootExpValue" value="1"/>
-	<property name="CraftingIngredientTime" value=".25"/>
+	<property name="RepairTime" value=".5"/>
+	<property name="RepairAmount" value="20"/>
+	<property name="CraftingIngredientTime" value=".2"/>
 </item>
 
-
-<item name="MasterKeyroom2"> <!-- scrap material -->
+<item name="MasterKeyroomtwo"> <!-- scrap material -->
 	<property name="HoldType" value="45"/>
 	<property name="Meshfile" value="#Other/Items?Misc/sackPrefab.prefab"/>
 	<property name="DropMeshfile" value="#Other/Items?Misc/sack_droppedPrefab.prefab"/>
 	<property name="Material" value="MresourceWood"/>
 	<property name="Weight" value="5"/>
-	<property name="Stacknumber" value="6000"/> <!-- STK resource -->
-	<property name="FuelValue" value="50"/>
-	<property name="EconomicValue" value="25"/>
-	<property name="EconomicBundleSize" value="50"/>
-	<property name="Group" value="Resources"/>
+	<property name="Stacknumber" value="1"/> <!-- STK resource -->
 	<property name="RepairAmount" value="100"/>
 	<property name="LootExpValue" value="1"/>
-	<property name="CraftingIngredientTime" value=".25"/>
 </item>
 
 <item name="MasterKeyBossRoom"> <!-- scrap material -->
@@ -57,14 +50,9 @@
 	<property name="DropMeshfile" value="#Other/Items?Misc/sack_droppedPrefab.prefab"/>
 	<property name="Material" value="MresourceWood"/>
 	<property name="Weight" value="5"/>
-	<property name="Stacknumber" value="6000"/> <!-- STK resource -->
-	<property name="FuelValue" value="50"/>
-	<property name="EconomicValue" value="25"/>
-	<property name="EconomicBundleSize" value="50"/>
-	<property name="Group" value="Resources"/>
+	<property name="Stacknumber" value="1"/> <!-- STK resource -->
 	<property name="RepairAmount" value="100"/>
 	<property name="LootExpValue" value="1"/>
-	<property name="CraftingIngredientTime" value=".25"/>
 </item>
 <item name="AmoxilIngredientParts2">
 	<property name="HoldType" value="31"/>
@@ -2810,7 +2798,14 @@
 	</item>
 
 
-
+<!-- For legendary quest items -->
+	<item name="tier10_clear">
+		<property name="Extends" value="challengeQuestMaster"/>
+		<property name="CustomIconTint" value="fbb0b0"/>
+		<property class="Action0">
+			<property name="QuestGiven" value="tier10_clear"/>
+		</property>
+	</item>
 
 
 
