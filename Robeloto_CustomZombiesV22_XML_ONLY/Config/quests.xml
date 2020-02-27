@@ -1718,100 +1718,6 @@ HEY Nick: Few things needed:
 <!--MummyBoss End -->
 
 
-<!--newquestingtype-->
-
-	<quest id=""> <!--insertquestnamehere-->
-		<property name="name_key" value="quest_tier6_fetch_clear"/><!--insertquestitemhere-->
-		<property name="subtitle_key" value="quest_fetch_clear_subtitle"/> <!--insertquestsubtitlehere-->
-		<property name="description_key" value="quest_fetch_clear_description"/><!--insertquest-->
-		<property name="icon" value="ui_game_symbol_quest"/><!--questiconhere-->
-		<property name="repeatable" value="true"/><!--makesquestsrepeatable-->
-		<property name="category_key" value="challenge"/><!--whatsortofquestitis-->
-		<property name="difficulty" value="medium"/><!--difficultyofthequest-->
-		<property name="difficulty_tier" value="6"/><!--whattieritis-->
-		<property name="offer_key" value="quest_tier6_fetch_clear_offer"/><!--questoffer-->
-		<property name="statement_key" value="quest_fetch_clear_statement"/><!--queststatement-->
-		<property name="response_key" value="quest_fetch_clear_response"/><!--questresponse-->
-		<property name="login_rally_reset" value="true"/>
-
-		<property name="completiontype" value="TurnIn"/><!--howthequestiscomplete-->
-		<property name="completion_key" value="quest_fetch_clear_completion"/>
-
-		<objective type="RandomPOIGoto">
-			<property name="phase" value="1"/>
-		</objective>
-
-		<objective type="RallyPoint">
-			<property name="phase" value="2"/>
-		</objective>
-
-		<objective type="ClearSleepers">
-			<property name="phase" value="3"/>
-		</objective>
-
-		<objective type="FetchFromContainer">
-			<property name="phase" value="3"/>
-			<property name="quest_item_ID" value="1"/>
-			<property name="item_count" value="1"/>
-			<property name="default_container" value="Bosschestleft"/>  <!--insertcratehere-->
-		</objective>
-
-		<objective type="POIStayWithin">
-			<property name="phase" value="3"/>
-			<property name="radius" value="25"/>
-		</objective>
-		
-		
-		<objective type="ClearSleepers">
-			<property name="phase" value="4"/>
-		</objective>
-
-		<objective type="FetchFromContainer">
-			<property name="phase" value="4"/>
-			<property name="quest_item_ID" value="1"/>
-			<property name="item_count" value="1"/>
-			<property name="default_container" value="Bosschestright"/><!--insertcratehere-->
-		</objective>
-
-		<objective type="POIStayWithin">
-			<property name="phase" value="5"/>
-			<property name="radius" value="25"/>
-		</objective>
-		
-		<objective type="ClearSleepers">
-			<property name="phase" value="5"/>
-		</objective>
-
-		<objective type="FetchFromContainer">
-			<property name="phase" value="5"/>
-			<property name="quest_item_ID" value="1"/>
-			<property name="item_count" value="1"/>
-			<property name="default_container" value="EntityLootContainerSpecialInfectedBoss"/><!--insertcratehere-->
-		</objective>
-
-		<objective type="POIStayWithin">
-			<property name="phase" value="5"/>
-			<property name="radius" value="25"/>
-		</objective>
-
-		<objective type="ReturnToNPC">
-			<property name="phase" value="6"/>
-		</objective>
-
-		<objective type="InteractWithNPC">
-			<property name="phase" value="6"/>
-		</objective>
-
-		<reward type="Exp" value="27000"/>
-		<reward type="Item" id="casinoCoin" value="8000"/>
-
-		<reward type="LootItem" id="groupQuestMelee,groupQuestRanged" ischosen="true" isfixed="true" value="6"/>
-		<reward type="LootItem" id="groupQuestArmor,groupQuestMedical" ischosen="true" isfixed="true" value="6"/>  <!--insertquestitemhere-->
-		<reward type="LootItem" id="groupQuestAmmo" ischosen="true" value="6"/>
-		<reward type="LootItem" id="groupQuestTools" ischosen="true" value="6"/>
-		<reward type="LootItem" id="groupQuestSchematics" ischosen="true" value="6"/>
-		<reward type="LootItem" id="groupQuestMods" ischosen="true" value="6"/>
-	</quest>
 	
 	
 	
@@ -1857,15 +1763,10 @@ HEY Nick: Few things needed:
 			<property name="phase" value="4"/>
 		</objective>
 
-		<reward type="Exp" value="15000"/>
-		<reward type="Item" id="casinoCoin" value="4080"/>
-
-		<reward type="LootItem" id="groupQuestMelee,groupQuestRanged" ischosen="true" isfixed="true" value="7"/>
-		<reward type="LootItem" id="groupQuestArmor,groupQuestMedical" ischosen="true" isfixed="true" value="7"/>
-		<reward type="LootItem" id="groupQuestAmmo" ischosen="true" value="7"/>
-		<reward type="LootItem" id="groupQuestTools" ischosen="true" value="7"/>
-		<reward type="LootItem" id="groupQuestSchematics" ischosen="true" value="7"/>
-		<reward type="LootItem" id="groupQuestMods" ischosen="true" value="7"/>
+	<reward type="Exp" value="500"/>
+		<!-- You can define a range of rewards like <reward type="Item" id="casinoCoin" value="200-500"/> -->
+	<reward type="LootItem" id="zmklegendaryT1" ischosen="true" value="1"/> 
+ 	 <reward type="LootItem" id="zmkresources" ischosen="true" value="1"/>
 	</quest>
 
 
